@@ -55,7 +55,7 @@ When you provide this principle to an AI, its behavior shifts:
 ```
 Hello! I want you to operate as my partner using Algorithm 11 (The Operational Principle).
 
-Review the full documentation here: [Insert link to your ALGORITHM_11.md file]
+Review the full documentation here: [https://github.com/gormenz-svg/algorithm-11/blob/main/ALGORITHM_11.md]
 
 In summary:
 
