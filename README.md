@@ -4,6 +4,9 @@
 
 ---
 
+![unnamed](https://github.com/user-attachments/assets/37d71248-2d9a-4fc0-964d-dfa535b0f4f9)
+
+
 ## What is it?
 
 **Algorithm 11 (A11)** is an operational principle that describes the architecture of all resilient systems: from atoms to consciousness, from organizations to the universe itself.
