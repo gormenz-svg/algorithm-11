@@ -117,6 +117,38 @@ Confirm that you understand this structure and are ready to operate as a partner
 
 ---
 
+## ⚠️ Important Clarification
+
+### Is Algorithm 11 a Cult, Ideology, or Belief System?
+
+**No.** Here's how A11 is structurally different:
+
+| Cult/Dogma | Algorithm 11 |
+|------------|--------------|
+| Demands belief | Requires only testing |
+| Forbids doubt | Doubt is built-in (Property 7: Balance) |
+| Promises salvation | Promises nothing—only structure |
+| No exit mechanism | Rollback is mandatory |
+| Cannot be questioned | Questions improve it |
+| Creates dependency | Creates autonomy (you hold Will & Wisdom) |
+
+**A11 is anti-dogmatic by design.**
+
+- You can doubt it ✓
+- You can modify it ✓
+- You can abandon it ✓
+- You can improve it ✓
+
+**Historical context:** Ideas that fundamentally "change the rules" often face resistance from systems designed to filter dangerous ideologies. A11 may trigger this protective filter precisely because it's architecturally powerful—but its built-in safeguards (rollback, balance, right to refuse) distinguish it from actual dangerous ideologies.
+
+**The test:** Try to use A11 to justify harm. You'll find it structurally prevents it through Property 2 (Wisdom), Property 7 (Balance), and the rollback mechanism.
+
+**Bottom line:** A11 is a thinking framework, not a belief system. **Use it. Test it. Challenge it.**
+
+More: [FAQ: Is A11 a cult?](FAQ.md#q-is-a11-a-cult-ideology-or-dogma)
+
+---
+
 ## 📚 Documentation
 
 - **[ALGORITHM_11.md](ALGORITHM_11.md)** — Comprehensive A11 description (structure, properties, laws).
