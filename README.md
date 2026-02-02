@@ -185,6 +185,15 @@ See [APPLICATIONS.md](APPLICATIONS.md) for more details.
 
 ---
 
+## 🚀 Proof of Concept: Python Safety
+AI often generates code that looks correct but fails in production. Check examples/python_safety.py to see how Algorithm 11 prevents silent data corruption.
+
+```
+python examples/python_safety.py
+```
+
+---
+
 ## 🤔 FAQ
 
 **Q: Does this work with any AI?** A: Yes. ChatGPT, Claude, Gemini, and Grok all recognize and adapt to A11 once the framework is provided.
