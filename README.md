@@ -185,8 +185,17 @@ See [APPLICATIONS.md](APPLICATIONS.md) for more details.
 
 ---
 
-## 🚀 Proof of Concept: Python Safety
-AI often generates code that looks correct but fails in production. Check examples/python_safety.py to see how Algorithm 11 prevents silent data corruption.
+## 🛠 Battle Test: A11 vs Standard AI
+
+Standard AI-generated code often suffers from silent logic failures. 
+One of the most common issues is the **Race Condition** in asynchronous Python.
+
+### The Challenge:
+Process 100 concurrent transactions. 
+- **Standard AI:** Usually loses data because it doesn't account for state integrity.
+- **Algorithm 11:** Identifies the state constraint and ensures 100% integrity.
+
+### See it in action:
 
 ```
 python examples/python_safety.py
