@@ -193,19 +193,38 @@ See [APPLICATIONS.md](APPLICATIONS.md) for more details.
 
 ## 🛠 Battle Test: A11 vs Standard AI
 
-Standard AI-generated code often suffers from silent logic failures. 
-One of the most common issues is the **Race Condition** in asynchronous Python.
+Algorithm 11 is not theoretical — it is a practical operational framework.  
+Below are real, runnable, and readable examples demonstrating how A11 improves reasoning, stability, and decision-making across domains.
 
-### The Challenge:
-Process 100 concurrent transactions. 
-- **Standard AI:** Usually loses data because it doesn't account for state integrity.
-- **Algorithm 11:** Identifies the state constraint and ensures 100% integrity.
+### 🧠 1. Decision Making Under Uncertainty  
+**File:** `examples/decision_making_a11.md`  
+A clear demonstration of how A11 helps a person make a major life decision (career, relocation, education) by structuring intention, values, facts, and constraints.
 
-### See it in action:
+### 🛠 2. Battle Test: A11 vs Standard AI (Python Safety)  
+**File:** `examples/python_safety.py`  
+Standard AI-generated code often suffers from silent logic failures such as race conditions.  
+A11 identifies state constraints and ensures 100% data integrity.
 
-```
-python examples/python_safety.py
-```
+### 🧩 3. System Design & Engineering  
+**File:** `examples/system_design_a11.md`  
+Shows how A11 structures the design of a complex autonomous drone system — balancing freedom, constraints, safety, and mission intent.
+
+### 🤖 4. A11 vs Standard AI Reasoning  
+**File:** `examples/a11_vs_standard_ai.md`  
+A direct comparison of how a standard LLM and an A11‑activated LLM solve the same complex problem.  
+A11 produces structured, balanced, human-aligned reasoning.
+
+### 💼 5. Business Strategy with A11  
+**File:** `examples/business_strategy_a11.md`  
+Demonstrates how A11 helps companies avoid strategic drift and create balanced, actionable, long-term plans.
+
+### 🧬 6. A11 as a Cognitive Model for Science  
+**File:** `examples/cognitive_model_a11.md`  
+Shows how A11 structures hypothesis formation, experimental design, and interpretation of scientific data.
+
+### 🚨 7. Crisis & Stress Management with A11  
+**File:** `examples/crisis_management_a11.md`  
+A powerful demonstration of how A11 stabilizes thinking during emotional or life crises — restoring clarity, grounding, and actionable steps.
 
 ---
 
