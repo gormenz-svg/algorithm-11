@@ -9,6 +9,7 @@ Current Status:
 - Original Research: [Preprint in preparation for cs.AI]
 - Repository: https://github.com/gormenz-svg/algorithm-11
 - Concept Release Date: February 2026
+- Publication: https://zenodo.org/records/18457952 
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
