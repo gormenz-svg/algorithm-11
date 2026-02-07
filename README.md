@@ -137,6 +137,7 @@ Provides a simplified, powerful interaction model focused on clarity, honesty, a
 For researchers and developers, the **standard A11 specification** is recommended for full structural understanding.
 
 👉 [A11 Universal Partner Protocol — v4.0](https://github.com/gormenz-svg/algorithm-11/blob/main/docs/A11-v4.0.md)
+👉 [Standard A11 specification](https://github.com/gormenz-svg/algorithm-11/blob/main/QUICK_START.md)
 
 ---
 
