@@ -122,14 +122,11 @@ Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11/
 
 ---
 
-## A11 Universal Partner Protocol (v4.0)
+## A11 versions
 
-**Optimized version for everyday users.**  
-Provides a simplified, powerful interaction model focused on clarity, honesty, and goal‑aligned reasoning.
+For researchers and developers, the **standard A11 specification** is recommended for full structural understanding.
 
-For researchers and developers, the **standard A11 specification** or **standard A11** + **A11 v4** is recommended for full structural understanding.
-
-- 👉 [A11 Universal Partner Protocol — v4.0](https://github.com/gormenz-svg/algorithm-11/blob/main/docs/A11-v4.0.md)
+- 👉 [A11 versions](https://github.com/gormenz-svg/algorithm-11/blob/main/docs/versions.md.md)
 - 👉 [Standard A11 specification](https://github.com/gormenz-svg/algorithm-11/blob/main/QUICK_START.md)
 
 ---
