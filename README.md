@@ -285,17 +285,14 @@ A short, accessible introduction to Algorithm 11 — the universal reasoning arc
 
 👉 **Download A11‑Lite Guide (PDF)**  
 Zenodo: https://doi.org/10.5281/zenodo.18530919  
-GitHub: docs/A11-LITE-GUIDE.pdf
-
-The Lite version includes:
-- the core idea of A11  
-- the 11‑step structure  
-- the quick template  
-- the AI mini‑prompt  
-- a real‑world example  
+GitHub: docs/A11-LITE-GUIDE.pdf 
 
 The full structural specification (“The Core”) is available here:  
 https://doi.org/10.5281/zenodo.18457952
+
+👉 **A11 — Language(PDF)**
+📄 PDF: extensions/a11-language/A11 — Language Specification (v1.0.0).pdf  
+🔗 DOI: https://doi.org/10.5281/zenodo.18540045
 
 ---
 
