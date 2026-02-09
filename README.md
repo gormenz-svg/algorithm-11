@@ -294,6 +294,10 @@ https://doi.org/10.5281/zenodo.18457952
 📄 PDF: extensions/a11-language/A11 — Language Specification (v1.0.0).pdf  
 🔗 DOI: https://doi.org/10.5281/zenodo.18540045
 
+### A11 for Autonomous Vehicles — Conflict Resolution Model
+📄 PDF: extensions/a11-autonomous-vehicles/A11 for Autonomous Vehicles — Conflict Resolution Model.pdf  
+🔗 DOI: https://doi.org/10.5281/zenodo.18542117
+
 ---
 
 ## 📜 License
