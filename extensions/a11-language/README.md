@@ -37,7 +37,7 @@ this document focuses on **communication**:
 - Applications in Daily Work and Research  
 
 ## Zenodo
-(будет добавлено после публикации)
+DOI: https://doi.org/10.5281/zenodo.18540045
 
 ## Related
 - A11 Full Structural Specification  
