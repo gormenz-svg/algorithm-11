@@ -295,7 +295,7 @@ https://doi.org/10.5281/zenodo.18457952
 🔗 DOI: https://doi.org/10.5281/zenodo.18540045
 
 ### A11 for Autonomous Vehicles — Conflict Resolution Model
-📄 PDF: extensions/a11-autonomous-vehicles/A11 for Autonomous Vehicles — Conflict Resolution Model.pdf  
+📄 PDF: extensions/a11-autonomous-vehicles/applications/A11 for Autonomous Vehicles — Conflict Resolution Model.pdf  
 🔗 DOI: https://doi.org/10.5281/zenodo.18542117
 
 ---
