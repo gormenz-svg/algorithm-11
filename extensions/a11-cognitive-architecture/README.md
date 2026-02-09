@@ -32,7 +32,7 @@ Unlike the Full Structural Specification, which focuses on the internal mechanic
 DOI: https://doi.org/10.5281/zenodo.18536520
 
 ## Related
-- Full Structural Specification  
+- Full Structural Specification https://doi.org/10.5281/zenodo.18490333 
 - A11‑Lite Guide https://github.com/gormenz-svg/algorithm-11/blob/main/docs/A11%E2%80%91LITE%20GUIDE.pdf 
 - A11 Language (coming soon)  
 - A11 OS Thinking (coming soon)  
