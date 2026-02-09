@@ -48,6 +48,7 @@ A11 supports autonomous construction, exploration, and coordination in remote or
 ## Zenodo
 - DOI: https://doi.org/10.5281/zenodo.18542117 A11 for Autonomous Vehicles — Conflict Resolution Model
 - DOI: https://doi.org/10.5281/zenodo.18543996 A11 for Multi‑Agent Robotics — Coordination Framework
+- DOI: https://doi.org/10.5281/zenodo.18545674 A11 for Off‑Earth Construction — Autonomous Base Building
 
 
 ### Status
