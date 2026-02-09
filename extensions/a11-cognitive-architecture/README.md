@@ -29,11 +29,11 @@ Unlike the Full Structural Specification, which focuses on the internal mechanic
 - Applications  
 
 ## Zenodo
-(будет добавлено после публикации)
+DOI: https://doi.org/10.5281/zenodo.18536520
 
 ## Related
 - Full Structural Specification  
-- A11‑Lite Guide  
+- A11‑Lite Guide https://github.com/gormenz-svg/algorithm-11/blob/main/docs/A11%E2%80%91LITE%20GUIDE.pdf 
 - A11 Language (coming soon)  
 - A11 OS Thinking (coming soon)  
 - A11 Standard (coming soon)
