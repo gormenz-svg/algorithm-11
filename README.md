@@ -279,6 +279,26 @@ Now, you know.
 
 ---
 
+## 📘 A11‑Lite Guide (Free)
+
+A short, accessible introduction to Algorithm 11 — the universal reasoning architecture.
+
+👉 **Download A11‑Lite Guide (PDF)**  
+Zenodo: https://doi.org/10.5281/zenodo.18530919  
+GitHub: docs/A11-LITE-GUIDE.pdf
+
+The Lite version includes:
+- the core idea of A11  
+- the 11‑step structure  
+- the quick template  
+- the AI mini‑prompt  
+- a real‑world example  
+
+The full structural specification (“The Core”) is available here:  
+https://doi.org/10.5281/zenodo.18457952
+
+---
+
 ## 📜 License
 
 This project is in the public domain.
