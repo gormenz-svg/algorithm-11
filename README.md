@@ -314,7 +314,7 @@ Now, you know.
   PDF: /extensions/A11 — Language Specification (v1.0).pdf
 
 - **A11 — System Integration Guide**  
-  DOI: https://doi.org/10.5281/zenodo.18595554 
+  DOI: https://doi.org/10.5281/zenodo.18595554  
   PDF: /core/A11 — System Integration Guide (v1.0).pdf
 
 
