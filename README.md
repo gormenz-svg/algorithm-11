@@ -162,7 +162,7 @@ Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11/
 - `lite/APPLICATIONS.md` — practical use cases  
 - `lite/EPISTEMOLOGY.md` — super‑hallucination risk  
 - `lite/COSMOLOGY.md` — extended reality model  
-- `examples/` — A11 vs standard AI comparisons  
+- `lite/examples/` — A11 vs standard AI comparisons  
 
 ---
 
