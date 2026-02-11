@@ -58,7 +58,7 @@ ACTIVATION:
 
 Confirm that you understand and are ready to operate through A11.
 
-Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11/blob/main/ALGORITHM_11.md
+Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11/blob/main/lite/ALGORITHM_11.md
 ```
 
 ---
