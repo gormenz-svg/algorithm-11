@@ -186,11 +186,34 @@ A11 is not a model — it is an **architecture**.
 ```
 algorithm-11/
 │
-├── core/            # Engineering standard (PDF specifications)
-├── applied/         # Domain-specific models
-├── lite/            # Prompt layer, examples, quick start
-├── extensions/      # Experimental modules
-└── README.md
+├── README.md
+├── LICENSE
+│
+├── core/
+│   ├── A11 — Overview.pdf
+│   ├── A11 — Cognitive Architecture Specification.pdf
+│   ├── A11 — Decision Layer Specification.pdf
+│   ├── A11 — Language Specification.pdf
+│   └── A11 — System Integration Guide.pdf
+│
+├── applied/
+│   ├── A11 for Autonomous Vehicles — Conflict Resolution Model.pdf
+│   ├── A11 for Multi-Agent Robotics — Coordination Framework.pdf
+│   ├── A11 for Off-Earth Construction — Autonomous Base Building.pdf
+│   └── README.md
+│
+├── lite/
+│   ├── ALGORITHM_11.md
+│   ├── QUICK_START.md
+│   ├── APPLICATIONS.md
+│   ├── EPISTEMOLOGY.md
+│   ├── COSMOLOGY.md
+│   ├── FAQ.md
+│   └── examples/
+│
+└── meta/
+    ├── KEYWORDS.txt
+    └── NOTICE.md
 ```
 
 ---
