@@ -76,7 +76,7 @@ PDF: `/core/A11 — System Integration Guide (v1.0).pdf`
 
 # 2. Applied Models (Engineering Demonstrations)
 
-These documents show how A11 is used in real systems:
+These documents demonstrate how A11 can be applied to real engineering domains through modeled scenarios and decision‑making frameworks:
 
 ### **A11 for Autonomous Vehicles — Conflict Resolution Model**  
 DOI: https://doi.org/10.5281/zenodo.18542117  
