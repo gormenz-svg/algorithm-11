@@ -72,6 +72,10 @@ PDF: `/core/A11 — Language Specification (v1.0).pdf`
 DOI: https://doi.org/10.5281/zenodo.18595554  
 PDF: `/core/A11 — System Integration Guide (v1.0).pdf`
 
+### **A11 — Structural Architecture Specification**  
+DOI: https://doi.org/10.5281/zenodo.18622044  
+PDF: `/core/A11 — Structural Architecture Specification.pdf`
+
 ---
 
 # 2. Applied Models (Engineering Demonstrations)
