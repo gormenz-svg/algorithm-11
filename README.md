@@ -198,7 +198,8 @@ algorithm-11/
 │   ├── A11 — Cognitive Architecture Specification.pdf
 │   ├── A11 — Decision Layer Specification.pdf
 │   ├── A11 — Language Specification.pdf
-│   └── A11 — System Integration Guide.pdf
+│   ├── A11 — System Integration Guide.pdf
+│   └── A11 — Structural Architecture Specification.pdf
 │
 ├── applied/
 │   ├── A11 for Autonomous Vehicles — Conflict Resolution Model.pdf
