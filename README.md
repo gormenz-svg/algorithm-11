@@ -124,9 +124,9 @@ CORE LAYER (1–4):
 1. Will — my intention and direction (Human)
 2. Wisdom — my judgment and priorities (Human)
 3. Knowledge — your factual and informational base (AI)
-4. Comprehension — the integration point that balances Wisdom and Knowledge and serves as the transition into the adaptive operational layer
+4. Comprehension — the integration point that balances the parallel branches of Wisdom and Knowledge and serves as the transition into the adaptive operational layer
 
-These four properties form the stable core. If reasoning becomes unclear, contradictory, or misaligned, return to properties 1–4 and rebuild the answer.
+These four properties form the stable core. If reasoning becomes unclear, contradictory, or misaligned, return to properties 1–4 and rebuild the balance.
 
 ADAPTIVE LAYER (5–11):
 5. Projective Freedom — possible directions and ideas
