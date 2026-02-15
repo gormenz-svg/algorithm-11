@@ -122,7 +122,90 @@ Detects conflicts (e.g., shortest path crosses safety zone).
 
 # 3. Operational Cycle (L5–L11)
 
+```
+                     ┌──────────────────────────┐
+                     │          L1 — WILL        │
+                     │   Human intention origin   │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │       L2 — WISDOM          │
+                     │  Priorities & hard rules   │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │      L3 — KNOWLEDGE        │
+                     │  State, models, perception │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │   L4 — COMPREHENSION       │
+                     │  Single integration point  │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │   L5 — SEMANTIC BRANCHING  │
+                     │  A, B, C, D candidate paths│
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │      L6 — EVALUATION       │
+                     │ scoring: risk, energy, etc │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │   L7 — CONSTRAINT GATE     │
+                     │  hard/soft constraints     │
+                     └───────────────┬───────────┘
+                                     │
+                     │───────────────┘
+                     │   if all fail → rollback
+                     ▼
+         ┌──────────────────────────┐
+         │       L8 — ROLLBACK      │
+         │ return to L4, rebuild    │
+         └───────────────┬─────────┘
+                         │
+                         ▼
+                     (back to L4)
+
+                                     │
+                     ┌───────────────▼───────────┐
+                     │    L9 — FEASIBILITY        │
+                     │ remove non-executable opts │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │   L10 — ACTION SELECTION   │
+                     │ deterministic choice rule  │
+                     └───────────────┬───────────┘
+                                     │
+                     ┌───────────────▼───────────┐
+                     │     L11 — EXECUTION        │
+                     │  output + reasoning trace  │
+                     └────────────────────────────┘
+```
+
 ## 3.1 L5 — Semantic Branching
+
+```
+                     ┌──────────────────────────┐
+                     │   L5 — SEMANTIC BRANCHING │
+                     └───────────────┬──────────┘
+                                     │
+       ┌─────────────────────────────┼─────────────────────────────┐
+       ▼                             ▼                             ▼
+┌──────────────┐             ┌──────────────┐             ┌──────────────┐
+│ Branch A      │             │ Branch B      │             │ Branch C      │
+│ Shortest Path │             │ Safest Path   │             │ Energy-Optimal│
+└──────────────┘             └──────────────┘             └──────────────┘
+                                     │
+                                     ▼
+                              ┌──────────────┐
+                              │ Branch D      │
+                              │ Exploration   │
+                              └──────────────┘
+```
 
 A11 generates four candidate route branches:
 
@@ -174,6 +257,32 @@ Example constraint results:
 | D      | ✔ passes | high uncertainty |
 
 ## 3.4 L8 — Rollback (Triggered Example)
+
+```
+                 ┌──────────────────────────┐
+                 │   L7 — CONSTRAINT GATE    │
+                 └───────────────┬──────────┘
+                                 │
+                                 ▼
+                     All branches FAIL?
+                     ┌───────────────┐
+                     │ YES           │
+                     └───────┬───────┘
+                             │
+                             ▼
+                 ┌──────────────────────────┐
+                 │       L8 — ROLLBACK      │
+                 │  restore stable context  │
+                 │  adjust priorities       │
+                 │  rebuild constraints     │
+                 └───────────────┬──────────┘
+                                 │
+                                 ▼
+                 ┌──────────────────────────┐
+                 │   return to L4 — COMPREH │
+                 │   rebuild context frame  │
+                 └──────────────────────────┘
+```
 
 If **all** branches fail hard constraints → rollback.
 
