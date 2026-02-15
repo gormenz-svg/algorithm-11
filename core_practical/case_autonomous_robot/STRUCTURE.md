@@ -245,8 +245,14 @@ Each scenario must show:
 
 ## 7. Files Planned for This Case
 
+- `STRUCTURE.md` — this file (architecture of the case)  
+- `CASE.md` — full written demonstration (with diagrams)  
+- `TRACE_EXAMPLE.md` — one full reasoning trace for a cycle  
+- `python_reference/` — minimal Python model (A11State, transitions, constraints, rollback)  
+
 ---
 
+```
 /core_practical
 │
 ├── README.md
@@ -272,11 +278,6 @@ Each scenario must show:
     ├── CASE_STRUCTURE_TEMPLATE.md
     ├── TRACE_TEMPLATE.md
     └── PYTHON_REFERENCE_TEMPLATE.md
-
-
-- `STRUCTURE.md` — this file (architecture of the case)  
-- `CASE.md` — full written demonstration (with diagrams)  
-- `TRACE_EXAMPLE.md` — one full reasoning trace for a cycle  
-- `python_reference/` — minimal Python model (A11State, transitions, constraints, rollback)  
+```
 
 ---
