@@ -96,7 +96,7 @@ PDF: `/applied/A11 for Off-Earth Construction.pdf`
 
 ---
 
-## 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
+# 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
 
 While A11 Core is an engineering standard, A11‑Lite is a simplified interface designed for chat environments.
 
