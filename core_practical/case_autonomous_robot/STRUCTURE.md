@@ -245,6 +245,35 @@ Each scenario must show:
 
 ## 7. Files Planned for This Case
 
+---
+
+/core_practical
+│
+├── README.md
+│
+├── case_autonomous_robot/
+│   ├── STRUCTURE.md
+│   ├── CASE.md
+│   ├── TRACE_EXAMPLE.md
+│   ├── diagrams/
+│   │   ├── flow.png
+│   │   ├── branching.png
+│   │   └── rollback.png
+│   └── python_reference/
+│       ├── a11_state.py
+│       ├── transitions.py
+│       ├── constraints.py
+│       └── example_run.py
+│
+├── case_multi_agent_coordination/
+│   └── STRUCTURE.md
+│
+└── templates/
+    ├── CASE_STRUCTURE_TEMPLATE.md
+    ├── TRACE_TEMPLATE.md
+    └── PYTHON_REFERENCE_TEMPLATE.md
+
+
 - `STRUCTURE.md` — this file (architecture of the case)  
 - `CASE.md` — full written demonstration (with diagrams)  
 - `TRACE_EXAMPLE.md` — one full reasoning trace for a cycle  
