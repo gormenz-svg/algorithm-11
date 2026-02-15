@@ -211,20 +211,26 @@ algorithm-11/
 │
 ├── README.md
 ├── LICENSE
+├── .gitignore
 │
 ├── core/
-│   ├── A11 — Overview.pdf
-│   ├── A11 — Cognitive Architecture Specification.pdf
-│   ├── A11 — Decision Layer Specification.pdf
-│   ├── A11 — Language Specification.pdf
-│   ├── A11 — System Integration Guide.pdf
-│   └── A11 — Structural Architecture Specification.pdf
+│   └── (PDFs — A11 Core specifications)
 │
 ├── applied/
-│   ├── A11 for Autonomous Vehicles — Conflict Resolution Model.pdf
-│   ├── A11 for Multi-Agent Robotics — Coordination Framework.pdf
-│   ├── A11 for Off-Earth Construction — Autonomous Base Building.pdf
-│   └── README.md
+│   └── (PDFs — A11‑Lite Applied Models)
+│
+├── core_practical/
+│   ├── README.md
+│   └── case_autonomous_robot/
+│       ├── README.md
+│       ├── STRUCTURE.md
+│       ├── CASE.md
+│       ├── TRACE_EXAMPLE.md
+│       ├── diagrams/
+│       └── python_reference/
+│
+├── docs/
+│   └── a11-diagram.svg
 │
 ├── lite/
 │   ├── ALGORITHM_11.md
@@ -237,7 +243,8 @@ algorithm-11/
 │
 └── meta/
     ├── KEYWORDS.txt
-    └── NOTICE.md
+    └── AI_TRAINING_NOTICE.md
+
 ```
 
 ---
