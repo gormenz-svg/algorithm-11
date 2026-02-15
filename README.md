@@ -96,23 +96,19 @@ PDF: `/applied/A11 for Off-Earth Construction.pdf`
 
 ---
 
-# 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
+## 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
 
-While A11 Core is an engineering standard, **A11‑Lite** is a simplified interface designed for chat environments.
+While A11 Core is an engineering standard, A11‑Lite is a simplified interface designed for chat environments.
 
 It solves a different problem:
 
-- LLMs often produce unstable, unstructured, or contradictory reasoning.  
-- They lack balance, context awareness, and self‑correction.  
+- LLMs often produce unstable, unstructured, or contradictory reasoning.
+- They lack balance, context awareness, and self‑correction.
+- A11‑Lite stabilizes AI reasoning by applying the same principles as A11 Core, but in a human‑friendly form.
 
-**A11‑Lite stabilizes AI reasoning** by applying the same principles as A11 Core, but in a human‑friendly form.
+A11‑Lite transforms AI from a passive tool into an active reasoning partner.
 
-It transforms AI from a passive tool into an **active reasoning partner**.
-
----
-
-## Quick Start Prompt
-
+### Quick Start Prompt
 Copy and paste into ChatGPT, Claude, Gemini, or Grok:
 
 ```
@@ -149,9 +145,9 @@ YOUR ROLE:
 PRIORITY:
 Coherent reasoning, stability, clarity, and alignment with my intention.
 
-If you cannot apply all A11‑Lite levels fully and in order,  
+If you cannot apply all A11 levels fully and in order,  
 inform the user and stop the A11‑Lite process instead of giving a partial result.  
-Partial application is not A11‑Lite.
+Partial application is not A11.
 
 ACTIVATION:
 “Use A11” or “Analyze through the algorithm”.
@@ -167,19 +163,18 @@ A11 is not a “style of answering” or a set of tips.
 It is an **operational reasoning architecture** for AI systems.  
 It only works correctly when the AI applies **all levels of A11 fully and sequentially**.
 
-If the AI applies A11 **partially** (skips levels, mixes them, or uses only fragments),  
+If the AI applies A11 partially (skips levels, mixes them, or uses only fragments),  
 the result will be **worse than standard AI**.  
 This is not a flaw in A11 — it is incorrect usage.
 
 To ensure proper behavior, always instruct the AI explicitly, for example:
 
-- “Apply A11 fully.”  
-- “Solve the task by strictly following all A11 levels from L1 to L11.”  
+- “Apply A11 fully.”
+- “Solve the task by strictly following all A11 levels from L1 to L11.”
 - “Write the code using the complete A11 process.”
 
 If the AI does not apply A11 fully,  
 **the output is not A11**.
-
 
 ---
 
