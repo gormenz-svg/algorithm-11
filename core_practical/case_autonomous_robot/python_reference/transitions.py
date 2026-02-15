@@ -3,6 +3,7 @@
 # Version 1.0
 
 from a11_state import BranchCandidate, EvaluationResult
+import constraints as a11_constraints
 
 
 def L1_will(mission):
@@ -98,28 +99,14 @@ def L6_evaluation(branches, context):
 
 def L7_constraints(branches, context):
     """
-    Apply hard and soft constraints.
-    Hard:
-      - energy must be <= energy_envelope
-      - no 'HIGH' risk if safety is top priority
-    Soft:
-      - prefer lower risk, lower energy
+    Apply hard constraints using constraints.py.
+    Soft constraints are implicit in later selection.
     """
-    energy_limit = context.energy_envelope
     safety_is_top = True  # в этом демо — да
 
     for branch in branches:
         ev = branch.evaluation
-        hard_ok = True
-
-        # Hard: energy budget
-        if ev.energy > energy_limit:
-            hard_ok = False
-
-        # Hard: risk if safety is top
-        if safety_is_top and ev.risk == "HIGH":
-            hard_ok = False
-
+        hard_ok = a11_constraints.hard_constraints(ev, context, safety_is_top)
         branch.constraint_result = hard_ok
 
     return branches
@@ -127,10 +114,9 @@ def L7_constraints(branches, context):
 
 def L8_rollback(context, trace):
     """
-    Rollback marker — в демо просто помечаем, что он был бы вызван.
-    Реальная логика живёт в rollback.py и cycle.py.
+    Marker for rollback — реальная логика вызывается из cycle.py через rollback.py.
+    Здесь ничего не меняем, только оставляем точку уровня.
     """
-    trace.rollback_info = "rollback_triggered"
     return context
 
 
@@ -174,12 +160,11 @@ def L10_selection(branches, context):
 def L11_execution(selected_branch, trace):
     """
     Produce final action and store trace.
-    В демо: просто возвращаем символическое действие.
+    В демо: возвращаем символическое действие.
     """
     if selected_branch is None:
         action = {"move_to": None, "reason": "no_feasible_branch"}
     else:
-        # В реальном кейсе здесь был бы следующий waypoint.
         action = {
             "move_to": "NEXT_WAYPOINT",
             "reason": f"selected {selected_branch.label}"
