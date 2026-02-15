@@ -1,58 +1,61 @@
-# A11 Reference Implementation — Level Transitions (Skeleton)
-# Version 1.0
+# A11 Reference Implementation — Level Transitions (Step 1: L5)
+# Version 1.1
+
+from a11_state import BranchCandidate
 
 def L1_will(mission):
-    """Define intention."""
     return mission
 
 
 def L2_wisdom(priorities, rules):
-    """Define priorities and hard rules."""
     return {"priorities": priorities, "rules": rules}
 
 
 def L3_knowledge(env_snapshot, robot_state, models):
-    """Collect state, models, and environment."""
     return {"env": env_snapshot, "robot": robot_state, "models": models}
 
 
 def L4_comprehension(wisdom, knowledge):
-    """Integrate Wisdom + Knowledge into a context frame."""
-    # ContextFrame created in cycle.py
     return {"wisdom": wisdom, "knowledge": knowledge}
 
 
 def L5_branching(context):
-    """Generate semantic branches."""
-    return []  # list of BranchCandidate
+    """
+    Generate semantic branches:
+    - A: shortest path
+    - B: safest path
+    - C: energy-optimal
+    - D: exploration-biased
+    For now paths — просто символические маркеры.
+    """
+    branches = [
+        BranchCandidate(label="A_shortest", path=["SHORTEST_PATH"]),
+        BranchCandidate(label="B_safest", path=["SAFEST_PATH"]),
+        BranchCandidate(label="C_energy_optimal", path=["ENERGY_OPTIMAL_PATH"]),
+        BranchCandidate(label="D_exploration", path=["EXPLORATION_PATH"]),
+    ]
+    return branches
 
 
 def L6_evaluation(branches, context):
-    """Evaluate each branch."""
     return branches
 
 
 def L7_constraints(branches, context):
-    """Apply hard and soft constraints."""
     return branches
 
 
 def L8_rollback(context, trace):
-    """Rollback logic (implemented in rollback.py)."""
     return context
 
 
 def L9_feasibility(branches, context):
-    """Remove infeasible branches."""
     return branches
 
 
 def L10_selection(branches, context):
-    """Deterministic selection rule."""
-    return None  # selected branch
+    return None
 
 
 def L11_execution(selected_branch, trace):
-    """Produce final action and store trace."""
-    return None  # action
-
+    return None
