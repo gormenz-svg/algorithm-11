@@ -149,6 +149,10 @@ YOUR ROLE:
 PRIORITY:
 Coherent reasoning, stability, clarity, and alignment with my intention.
 
+If you cannot apply all A11‑Lite levels fully and in order,  
+inform the user and stop the A11‑Lite process instead of giving a partial result.  
+Partial application is not A11‑Lite.
+
 ACTIVATION:
 “Use A11” or “Analyze through the algorithm”.
 
