@@ -217,7 +217,7 @@ algorithm-11/
 │   └── (PDFs — A11 Core specifications)
 │
 ├── applied/
-│   └── (PDFs — A11‑Lite Applied Models)
+│   └── (PDFs — A11 Applied Models)
 │
 ├── core_practical/
 │   ├── README.md
