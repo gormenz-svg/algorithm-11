@@ -1,4 +1,4 @@
-# A11 Reference Implementation — State Structures (Skeleton)
+# A11 Reference Implementation — State Structures
 # Version 1.0
 
 class RobotState:
@@ -57,4 +57,3 @@ class ReasoningTrace:
         self.feasible = []
         self.selected = None
         self.action = None
-
