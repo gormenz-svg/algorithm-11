@@ -94,18 +94,18 @@ Confirm that you understand and are ready to operate through A11.
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11/blob/main/lite/ALGORITHM_11.md
 ```
 
-## ⚠ Note
+## ⚠ Important Notice
 
 A11 is not a style of answering.  
-It is a structured reasoning architecture, and it works best when the AI applies all A11 levels fully and in order.
+It is a structured reasoning architecture, and it works only when the AI applies all A11 levels fully and in order.
 
-For the best results, you can ask the AI explicitly, for example:
+For best results, ask the AI explicitly, for example:
 
 - “Apply A11 fully.”
 - “Go through all A11 levels from L1 to L11.”
 - “Use the complete A11 process.”
 
-If A11 is not applied fully, the result simply isn’t considered A11.
+If A11 is not applied fully, the result is not considered A11.
 
 ---
 
