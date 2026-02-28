@@ -179,7 +179,8 @@ If A11 is not applied fully, the result is **not considered A11**.
 - `lite/APPLICATIONS.md` — practical use cases  
 - `lite/EPISTEMOLOGY.md` — super‑hallucination risk  
 - `lite/COSMOLOGY.md` — extended reality model  
-- `lite/examples/` — A11 vs standard AI comparisons  
+- `lite/examples/` — A11 vs standard AI comparisons
+- A11‑AGENT https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md
 
 ---
 
