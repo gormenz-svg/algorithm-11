@@ -5,10 +5,9 @@
 A11‑Agent defines how an AI system must execute Algorithm 11 using the canonical transition geometry, weighting pairs, fractal recursion, and operator model.
 A11‑Agent does not modify A11 — it turns the architecture into an executable protocol.
 
-A11 is not a code format.
-A11‑Agent applies the algorithm internally during reasoning and decision‑making.
-The generated code must remain purely technical and must not contain A11 terminology.
-
+A11 is an execution process, not a code format.
+The agent applies A11 internally during reasoning.
+The generated output (including code) must remain clean and free of A11 terminology unless the user explicitly requests level‑structured output.
 
 ---
 
