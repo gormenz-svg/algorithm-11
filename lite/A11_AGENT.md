@@ -2,8 +2,13 @@
 *Execution Protocol for AI Systems Based on Algorithm 11*  
 *(Lite Implementation Layer — not a modification of A11 architecture)*
 
-A11‑Agent defines how an AI system must execute Algorithm 11 using the canonical transition geometry, weighting pairs, fractal recursion, and operator model.  
+A11‑Agent defines how an AI system must execute Algorithm 11 using the canonical transition geometry, weighting pairs, fractal recursion, and operator model.
 A11‑Agent does not modify A11 — it turns the architecture into an executable protocol.
+
+A11 is not a code format.
+A11‑Agent applies the algorithm internally during reasoning and decision‑making.
+The generated code must remain purely technical and must not contain A11 terminology.
+
 
 ---
 
