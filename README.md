@@ -180,7 +180,8 @@ If A11 is not applied fully, the result is **not considered A11**.
 - `lite/EPISTEMOLOGY.md` — super‑hallucination risk  
 - `lite/COSMOLOGY.md` — extended reality model  
 - `lite/examples/` — A11 vs standard AI comparisons
-- A11‑AGENT https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md
+- A11-AGENT https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md
+- A11-AGENT-JSON https://github.com/gormenz-svg/algorithm-11/blob/main/lite/agent/A11_AGENT_JSON.md
 
 ---
 
@@ -235,6 +236,7 @@ algorithm-11/
 │   ├── EPISTEMOLOGY.md
 │   ├── COSMOLOGY.md
 │   ├── FAQ.md
+│   ├── agent/
 │   └── examples/
 │
 └── meta/
