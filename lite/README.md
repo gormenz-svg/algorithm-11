@@ -13,6 +13,9 @@ A11‑Lite focuses on clarity, intuition, and practical understanding without re
 A concise explanation of the A11 architecture, its purpose, and its universal reasoning model.  
 Designed as the primary introduction for new readers.
 
+### **A11_AGENT.md**
+Execution Protocol for AI Systems Based on Algorithm 11
+
 ### **QUICK_START.md**
 A practical quick‑start guide for using A11 in reasoning tasks.  
 Includes the 11‑step structure, templates, and a minimal AI prompt.
@@ -31,6 +34,9 @@ Frequently asked questions about A11, its purpose, usage, and conceptual foundat
 
 ### **examples/**
 Contains simple “before vs. after” examples demonstrating how A11 improves reasoning clarity, structure, and stability.
+
+### **agent/**
+Agents.
 
 ---
 
