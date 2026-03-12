@@ -249,8 +249,10 @@ algorithm-11/
 
 ## 6. License
 
-This project is in the public domain.  
-Algorithm 11 is a principle of structured reasoning — use freely, share widely.
+Algorithm 11 is licensed under the Creative Commons Attribution–NonCommercial 4.0 International License (CC BY‑NC 4.0).
+
+You may share and adapt the material, but commercial use is prohibited without explicit permission from the author.
+
 
 ---
 
