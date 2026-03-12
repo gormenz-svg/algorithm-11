@@ -29,7 +29,7 @@ These layers are connected but serve different audiences.
 
 ---
 
-# 1. A11 — Core Standard (Engineering Layer)
+## 1. A11 — Core Standard (Engineering Layer)
 
 The **A11 Core Standard** defines a domain‑agnostic decision layer that can be integrated into any autonomous system.  
 It provides:
@@ -78,7 +78,7 @@ PDF: `/core/A11 — Structural Architecture Specification.pdf`
 
 ---
 
-# 2. Applied Models (Engineering Demonstrations)
+## 2. Applied Models (Engineering Demonstrations)
 
 These documents demonstrate how A11 can be applied to real engineering domains through modeled scenarios and decision‑making frameworks:
 
@@ -96,7 +96,7 @@ PDF: `/applied/A11 for Off-Earth Construction.pdf`
 
 ---
 
-# 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
+## 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
 
 While A11 Core is an engineering standard, A11‑Lite is a simplified interface designed for chat environments.
 
@@ -185,7 +185,7 @@ If A11 is not applied fully, the result is **not considered A11**.
 
 ---
 
-# 4. Why A11 Matters
+## 4. Why A11 Matters
 
 A11 provides:
 
@@ -200,7 +200,7 @@ A11 is not a model — it is an **architecture**.
 
 ---
 
-# 5. Repository Structure
+## 5. Repository Structure
 
 ```
 algorithm-11/
@@ -247,21 +247,21 @@ algorithm-11/
 
 ---
 
-# 6. License
+## 6. License
 
 This project is in the public domain.  
 Algorithm 11 is a principle of structured reasoning — use freely, share widely.
 
 ---
 
-# 7. Community
+## 7. Community
 
 - Issues: GitHub Issues  
 - Socials: https://x.com/AleksejGor40999  
 
 ---
 
-# Start Now
+## Start Now
 
 → Scroll to **A11‑Lite — Quick Start** to activate A11 in your AI chat.  
 → Or explore the **A11 Core Standard** if you are an engineer or researcher.
