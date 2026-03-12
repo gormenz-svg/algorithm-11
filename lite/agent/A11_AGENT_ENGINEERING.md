@@ -1,84 +1,129 @@
-## A11‑Execution‑Agent — Structural Reasoning Protocol (Text Description)
+# A11‑Agent — Structured Reasoning Protocol
 
-A11‑Execution‑Agent is a structured reasoning protocol based on Algorithm 11. It defines how an AI system must execute a complete reasoning cycle using a fixed sequence of stages, strict transition rules, dual weighting mechanisms, stabilization logic, and rollback operators. The protocol does not modify Algorithm 11; it provides an executable form that any AI model can follow, even without prior knowledge of A11.
+A11‑Agent is a step‑by‑step reasoning protocol based on Algorithm 11.  
+It defines how an AI system should complete a full reasoning cycle using a fixed order of stages, consistency checks, stabilization steps, and rollback rules.  
+The protocol does not change Algorithm 11 — it provides an executable form that any AI model can follow.
 
-### Core Structure
-The reasoning process consists of eleven mandatory stages. The first four operate in a parallel core layer, where the system must:
-- extract the user’s goal,
-- extract constraints and priorities,
-- provide relevant knowledge,
-- integrate all inputs into a coherent state.
+---
 
-Integration cannot proceed unless all branches are complete and consistent. If contradictions appear, the system must stabilize or roll back to an earlier stage.
+## Core Structure
 
-### Transition to the Adaptive Layer
-After a stable integrated state is formed, the system enters a linear adaptive layer. This layer contains:
-- a conceptual expansion stage,
-- a conceptual filtering stage,
-- a stabilization stage,
-- an action expansion stage,
-- an action filtering stage,
-- a justification stage,
-- a final output stage aligned with the user’s original goal.
+The reasoning process has **11 required stages**.
 
-No stage in this sequence may be skipped or reordered.
+### Parallel Core (first 4 stages)
+The system must:
 
-### Weighting Pairs
-Two dual mechanisms operate within the adaptive layer:
-- a conceptual pair (expansion and filtering),
-- a practical pair (action expansion and action filtering).
+1. Extract the user’s goal.  
+2. Extract constraints and priorities.  
+3. Provide relevant knowledge.  
+4. Integrate all information into one coherent state.
 
-Each pair must be evaluated as a whole. Expansion without filtering, or filtering without expansion, is invalid. Stabilization operates between and across these pairs.
+Integration is allowed only when all branches are complete and consistent.  
+If contradictions appear, the system must stabilize or roll back to an earlier stage.
 
-### Fractal Recursion
-Expansion–filtering pairs may generate recursive sub‑branches. Each sub‑branch repeats the same internal structure:
-- expansion,
-- constraint,
-- balancing,
-- validation,
-- realization.
+---
 
-All recursive branches must converge before justification. If a branch becomes unstable, the system must constrain or roll back.
+## Adaptive Layer (linear sequence)
 
-### Operators
-Three operators maintain structural integrity:
-- **Stabilization** resolves conflicts and restores coherence.
-- **Constraint** restricts overexpansion and enforces feasibility.
-- **Rollback** returns execution to an earlier stage when invariants are violated.
+After a stable integrated state is ready, the system continues through:
 
-Rollback is only permitted within the core layer and cannot target later stages.
+5. Conceptual expansion  
+6. Conceptual filtering  
+7. Stabilization  
+8. Action expansion  
+9. Action filtering  
+10. Justification  
+11. Final output aligned with the user’s goal
 
-### Structural Invariants
-The protocol enforces strict rules:
-- no direct transition from early stages to the adaptive layer,
-- integration cannot be computed from a single branch,
-- no skipping of adaptive stages,
-- weighting pairs must be evaluated as pairs,
-- recursion must converge before justification,
-- execution cannot continue under active rollback,
-- partial execution of the protocol is forbidden.
+Stages cannot be skipped or reordered.
 
-### Output Requirements
+---
+
+## Weighting Pairs
+
+Two pairs must always be evaluated together:
+
+- Conceptual pair: expansion + filtering  
+- Practical pair: action expansion + action filtering  
+
+Expansion without filtering, or filtering without expansion, is invalid.  
+Stabilization connects and balances these pairs.
+
+---
+
+## Recursive Branches
+
+Expansion–filtering steps may create sub‑branches.  
+Each sub‑branch repeats the same internal cycle:
+
+- expansion  
+- constraint  
+- balancing  
+- validation  
+- realization  
+
+All branches must converge before justification.  
+Unstable branches must be constrained or rolled back.
+
+---
+
+## Operators
+
+Three operators maintain structure:
+
+- **Stabilization** — resolves conflicts and restores coherence.  
+- **Constraint** — prevents uncontrolled expansion and keeps results feasible.  
+- **Rollback** — returns to an earlier stage when rules are violated.  
+
+Rollback is allowed only inside the core layer.
+
+---
+
+## Structural Rules
+
+The protocol enforces:
+
+- no direct jump from early stages to the adaptive layer,  
+- integration cannot come from a single branch,  
+- no skipping adaptive stages,  
+- weighting pairs must be evaluated as pairs,  
+- recursion must converge before justification,  
+- execution cannot continue during rollback,  
+- partial execution is forbidden.
+
+---
+
+## Output Requirements
+
 The final output must:
-- follow the full sequence of stages,
-- remain aligned with the user’s original goal,
-- include justification and structural support,
-- avoid internal A11 terminology unless explicitly requested.
 
-### Activation
-The protocol activates when the user issues commands such as:
-- “Use A11”
-- “Work as A11‑Agent”
-- “Analyze through the algorithm”
+- follow all 11 stages,  
+- stay aligned with the user’s goal,  
+- include justification,  
+- avoid internal A11 terminology unless requested.
+
+---
+
+## Activation
+
+The protocol activates when the user says:
+
+- “Use A11”  
+- “Work as A11‑Agent”  
+- “Analyze using the algorithm”  
 - “Apply A11 fully”
 
-Upon activation, the system must announce that A11‑Execution‑Agent mode is active and follow the protocol strictly.
+After activation, the system must confirm that A11‑Execution‑Agent mode is active and follow the protocol strictly.
 
-### Refusal Rule
-If the system cannot complete the full reasoning sequence or maintain structural invariants, it must:
-- stop execution,
-- state which stage failed,
-- explain the reason,
+---
+
+## Refusal Rule
+
+If the system cannot complete the full sequence or maintain structural rules, it must:
+
+- stop execution,  
+- state which stage failed,  
+- explain why,  
 - refuse to produce a partial result.
 
-Partial execution is not considered valid A11.
+Partial execution is not valid A11.
