@@ -10,7 +10,7 @@ Repository: https://github.com/gormenz-svg/algorithm-11
 Publication DOI: https://zenodo.org/records/18457952  
 Concept Release: February 2026
 
-This work is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
-You are free to share and adapt the material for any purpose, including commercial use, provided that appropriate credit is given.
+This work is licensed under the **Creative Commons Attribution–NonCommercial 4.0 International License (CC BY‑NC 4.0)**.  
+You may share and adapt the material, but **commercial use is prohibited without explicit permission from the author**.
 
-Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
