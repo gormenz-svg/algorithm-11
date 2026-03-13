@@ -208,6 +208,7 @@ A11 is not a model — it is an **architecture**.
 algorithm-11/
 │
 ├── README.md
+├── COMMERCIAL_LICENSE.md
 ├── LICENSE
 ├── .gitignore
 │
