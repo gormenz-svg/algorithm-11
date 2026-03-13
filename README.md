@@ -249,10 +249,12 @@ algorithm-11/
 
 ## 6. License
 
-Algorithm 11 is licensed under the Creative Commons Attribution Non Commercial 4.0 International License (CC BY‑NC 4.0).
+A11 is provided under the **MIT License**.
 
-You may share and adapt the material, but commercial use is prohibited without explicit permission from the author.
+Premium support, audits and training are available under the optional **Commercial / Enterprise License**.
 
+➡️ [MIT License](./LICENSE)  
+➡️ [Commercial License](./COMMERCIAL_LICENSE.md)
 
 ---
 
