@@ -1,3 +1,5 @@
+🔖 Version: v1.0.0 (Stable)
+
 # Algorithm 11 (A11) — Universal Decision‑Making Architecture
 
 ## 🚨 Problem
