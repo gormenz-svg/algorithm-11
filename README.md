@@ -249,7 +249,7 @@ algorithm-11/
 
 ## 6. License
 
-Algorithm 11 is licensed under the Creative Commons Attribution–NonCommercial 4.0 International License (CC BY‑NC 4.0).
+Algorithm 11 is licensed under the Creative Commons Attribution Non Commercial 4.0 International License (CC BY‑NC 4.0).
 
 You may share and adapt the material, but commercial use is prohibited without explicit permission from the author.
 
