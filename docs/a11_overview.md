@@ -1,8 +1,10 @@
 # A11 Overview
 
-Algorithm 11 (A11) is an open standard for deterministic, interpretable, and structured reasoning in AI agents, autonomous systems, and engineering decision‑making. It defines a unified cognitive architecture composed of eleven levels (L1–L11) and a deterministic reasoning cycle that ensures stability, safety, and explainability across diverse domains.
+Algorithm 11 (A11) is an open standard for deterministic, interpretable, and structured reasoning in AI systems and autonomous decision‑making.  
+A11 defines an execution architecture based on eleven levels (S1–S11), dual weighting pairs, fractal recursion, and stabilizing operators.
 
-A11 is model‑agnostic and can be integrated with large language models (LLMs), classical algorithms, robotics stacks, and multi‑agent systems. Its purpose is to provide a consistent, auditable, and safety‑aligned reasoning layer for systems that must operate reliably under uncertainty.
+A11 is an execution process, not a code format.  
+An A11‑Agent applies A11 internally during reasoning and decision‑making. Outputs (including code) remain free of A11 terminology unless the user explicitly requests a level‑structured explanation.
 
 Version: **v1.0.0 (Stable)**  
 Status: **Open Reasoning Standard**
@@ -11,158 +13,93 @@ Status: **Open Reasoning Standard**
 
 ## Purpose of the A11 Standard
 
-A11 addresses long‑standing challenges in AI and autonomous systems:
+A11 addresses persistent challenges in AI and autonomous systems:
 
 - unstable or inconsistent reasoning  
-- lack of deterministic behavior  
+- weak alignment with user intent  
 - limited explainability and traceability  
-- weak constraint handling  
-- difficulty validating or certifying autonomous decisions  
-- fragmentation across agent frameworks and robotics architectures  
+- lack of structural invariants in decision processes  
+- difficulty validating or certifying autonomous behavior  
 
-A11 provides a unified solution through:
+A11 provides a unified execution standard through:
 
-- a deterministic reasoning cycle  
-- strict architectural levels  
-- constraint‑based safety gates  
-- rollback and recovery mechanisms  
-- structured decision traces  
-- domain‑agnostic integration patterns  
+- a level‑based architecture (S1–S11)  
+- branched Core Layer and linear Adaptive Layer  
+- dual weighting pairs (S5–S6, S8–S9)  
+- fractal recursion with convergence rules  
+- stabilizing operators: Balance, Constraint, Rollback  
 
-The goal is to establish a **common reasoning standard** that can be adopted across AI, robotics, and engineering systems.
+The goal is to define a **strict, auditable reasoning protocol** that can be embedded into AI systems and engineering workflows.
 
 ---
 
-## Architectural Principles
+## Core Architectural Structure
 
-A11 is built on five core principles:
+A11 is organized into:
 
-- **Determinism** — every reasoning cycle follows a reproducible sequence  
-- **Interpretability** — decisions are traceable through structured logs  
-- **Constraint‑Driven Safety** — safety and feasibility gates prevent invalid actions  
-- **Rollback Capability** — unstable or conflicting states can be safely reversed  
-- **Modularity** — the architecture integrates with any perception, planning, or control stack  
+- **Core Layer (S1–S4)** — Will, Wisdom, Knowledge, Comprehension  
+  - branched geometry (S2 and S3 evolve in parallel)  
+  - integration at S4 with strict validity rules  
 
-These principles ensure that A11 can serve as a stable reasoning layer in both digital and physical environments.
+- **Adaptive Layer (S5–S11)** — Projective and Practical weighting, Balance, Foundation, Realization  
+  - strictly linear sequence: S5 → S6 → S7 → S8 → S9 → S10 → S11  
+  - dual weighting pairs (S5–S6, S8–S9)  
+  - fractal recursion with mandatory convergence before S10  
 
----
-
-## The L1–L11 Cognitive Architecture
-
-A11 defines eleven architectural levels that structure the reasoning process:
-
-- **L1 — Intent Formation**  
-- **L2 — Context Acquisition**  
-- **L3 — Knowledge Integration**  
-- **L4 — Option Generation**  
-- **L5 — Semantic Branching**  
-- **L6 — Evaluation**  
-- **L7 — Constraint Gate**  
-- **L8 — Rollback and Recovery**  
-- **L9 — Safety Gate**  
-- **L10 — Action Selection**  
-- **L11 — Trace Generation**
-
-Together, these levels form a deterministic reasoning cycle that can be executed in real time, logged for analysis, and validated for safety.
-
-A detailed explanation of each level is provided in:  
-→ `a11_key_concepts.md`
+A11‑Agent turns this architecture into an executable protocol.
 
 ---
 
-## Deterministic Reasoning Cycle
+## A11‑Agent
 
-The A11 cycle transforms:
+A11‑Agent defines how an AI system must execute Algorithm 11:
 
-- goals  
-- context  
-- knowledge  
-- constraints  
-- environment state  
+- extracts and maintains **Will (S1)**  
+- captures **Wisdom (S2)** and provides **Knowledge (S3)**  
+- performs **Comprehension (S4)** as integration of S2 and S3  
+- executes the Adaptive Layer (S5–S11)  
+- applies **Balance, Constraint, Rollback**  
+- maintains stability, coherence, and alignment with S1  
 
-into a **single, validated, safe action**.
-
-The cycle ensures:
-
-- reproducibility  
-- stability under uncertainty  
-- predictable behavior  
-- consistent decision quality  
-- clear audit trails  
-
-This makes A11 suitable for systems that require high reliability, such as autonomous robots, vehicles, industrial automation, and safety‑critical AI agents.
+A11‑Agent does not modify A11 — it operationalizes it.
 
 ---
 
-## Model‑Agnostic Integration
+## Key Properties
 
-A11 does not prescribe how perception, planning, or control should be implemented. Instead, it provides a reasoning layer that can be integrated with:
+A system implementing A11 must:
 
-- LLM‑based agents  
-- classical planning algorithms  
-- robotics middleware (ROS, custom stacks)  
-- multi‑agent coordination frameworks  
-- simulation environments  
-- hybrid human‑AI systems  
+- respect structural invariants (no skipping levels, no partial A11)  
+- maintain transition validity (only admissible, structurally consistent transitions)  
+- evaluate weighting pairs as pairs, not isolated steps  
+- support fractal recursion with convergence  
+- refuse partial results if A11 cannot be fully executed  
 
-This separation of concerns allows A11 to be adopted incrementally without replacing existing infrastructure.
+Partial A11 = Not A11.
 
 ---
 
 ## Applications
 
-A11 is designed for a wide range of domains:
+A11 can be embedded into:
 
+- AI agents and reasoning systems  
 - autonomous robots and vehicles  
 - multi‑agent systems  
-- off‑Earth construction and exploration  
-- industrial automation  
-- digital AI agents  
 - decision support systems  
-- hybrid human‑AI workflows  
+- hybrid human–AI workflows  
 
-Domain‑specific engineering models are available in:  
-→ `/applied`
-
----
-
-## Benefits of Using A11
-
-Organizations and developers adopt A11 for:
-
-- **deterministic reasoning** in unpredictable environments  
-- **explainable decisions** through structured traces  
-- **safety alignment** via constraint gates  
-- **robustness** through rollback mechanisms  
-- **standardization** across heterogeneous systems  
-- **interoperability** between AI and robotics  
-
-A11 provides a foundation for building systems that must be both intelligent and trustworthy.
+In all cases, A11 provides a **structured, auditable reasoning protocol** that keeps the system aligned with user Will and explicit constraints.
 
 ---
 
-## Relationship to A11‑Lite
+## Related Documents
 
-A11‑Lite is a lightweight operational interface that exposes the A11 reasoning cycle to AI agents, including LLM‑based systems. It provides:
-
-- simplified reasoning primitives  
-- agent‑friendly abstractions  
-- compatibility with modern AI workflows  
-
-See:  
-→ `/lite`
+- `a11_key_concepts.md` — Core concepts of S1–S11, weighting pairs, recursion, operators  
+- `a11_for_ai_developers.md` — Using A11‑Agent in AI/LLM‑based systems  
+- `a11_for_autonomous_systems_developers.md` — A11 in robotics and autonomy  
+- `versions.md` — Version history of the A11 standard  
 
 ---
 
-## Further Reading
-
-- `a11_key_concepts.md` — Detailed explanation of the L1–L11 architecture  
-- `a11_glossary.md` — Definitions of key terms  
-- `a11_vs_other_models.md` — Comparison with CoT, ToT, RAG, and agent frameworks  
-- `a11_in_engineering_systems.md` — A11 in robotics and autonomous systems  
-- `/core` — Canonical specification  
-- `/core_practical` — Practical examples and reference implementations  
-
----
-
-A11 establishes a unified, deterministic, and interpretable reasoning standard for the next generation of AI and autonomous systems.
+A11 defines a strict, level‑based execution standard for reasoning — A11‑Agent makes it executable in AI systems.
