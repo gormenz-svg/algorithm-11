@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Algorithm 11 (A11): Universal Decision-Making Architecture"
+message: "If you use A11 in research, engineering, or publications, please cite this work."
+authors:
+  - family-names: "Dvojnev"
+    given-names: "Aleksej"
+version: "1.0.0"
+doi: "10.5281/zenodo.18622044"
+license: "MIT"
+repository-code: "https://github.com/gormenz-svg/algorithm-11"
+keywords:
+  - reasoning
+  - cognitive-architecture
+  - ai-safety
+  - autonomous-systems
+  - decision-making
+  - structured-reasoning
