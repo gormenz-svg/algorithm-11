@@ -7,6 +7,8 @@ nav_order: 1
 
 # Navigation structure
 nav:
+  - title: Repository
+    url: https://github.com/gormenz-svg/algorithm-11
   - title: Overview
     url: a11_overview.html
   - title: Key Concepts
