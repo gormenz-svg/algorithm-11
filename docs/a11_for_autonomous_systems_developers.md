@@ -1,7 +1,8 @@
 # A11 for Autonomous Systems Developers
 
 This document provides a concise engineering guide for applying Algorithm 11 (A11) in autonomous systems and robotics.  
-For the full execution protocol, refer to the canonical A11‑Agent specification in the root of this repository.
+
+**For the full execution protocol, refer to the canonical A11‑Agent specification [in the root of this repository](https://github.com/gormenz-svg/algorithm-11).**
 
 A11 provides a deterministic, interpretable, and safety‑aligned reasoning layer that can be embedded into robots, vehicles, drones, industrial systems, and multi‑agent environments.
 
