@@ -1,4 +1,4 @@
-# Algorithm 11 (A11) Documentation 
+# Algorithm 11 (A11) Documentation
 
 Algorithm 11 (A11) is an open standard for deterministic, interpretable, and safety‑aligned reasoning.  
 It defines an execution architecture based on eleven levels (S1–S11), dual weighting pairs, fractal recursion, and stabilizing operators.
