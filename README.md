@@ -272,7 +272,6 @@ algorithm-11/
 │
 ├── docs/                          # Diagrams, Guides, Developer Docs
 │   ├── a11-diagram.svg
-│   ├── A11‑LITE GUIDE.pdf
 │   ├── a11_for_ai_developers.md
 │   └── versions.md
 │
