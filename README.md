@@ -31,6 +31,25 @@ These layers are connected but serve different audiences.
 
 ---
 
+## Technical Overview
+
+**Architecture Type:**  
+Universal decision-making and reasoning architecture for autonomous systems and hybrid human–AI workflows.
+
+**Core Structure (L1–L4):**  
+Human intention (Will), human judgment (Wisdom), AI knowledge base, and integration layer (Comprehension).
+
+**Operational Cycle (L5–L11):**  
+Deterministic reasoning pipeline with freedom/constraint pairs, balance operator, and final realization loop.
+
+**Key Properties:**  
+Deterministic transitions, interpretable structure, hallucination resistance, fractal recursion, and traceable decision paths.
+
+**Integration Domains:**  
+Autonomous robotics, multi-agent systems, aerospace, LLM agents, safety‑critical pipelines, structured reasoning systems.
+
+---
+
 ## 1. A11 — Core Standard (Engineering Layer)
 
 The **A11 Core Standard** defines a domain‑agnostic decision layer that can be integrated into any autonomous system.  
