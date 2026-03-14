@@ -4,7 +4,7 @@ This document provides a concise overview of how AI developers can integrate Alg
 
 For the full execution protocol, activation rules, and level definitions, refer to the canonical A11‑Agent specification:
 
-**→ See the canonical A11‑Agent protocol in the root of this repository.**
+**→ [See the canonical A11‑Agent protocol in the root of this repository.](https://github.com/gormenz-svg/algorithm-11)**
 
 A11 is an execution architecture based on eleven levels (S1–S11), dual weighting pairs, fractal recursion, and stabilizing operators. It defines how an AI system must structure reasoning, maintain alignment with user intent, and ensure stability under complexity.
 
