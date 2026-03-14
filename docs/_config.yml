@@ -1,19 +1,19 @@
 theme: just-the-docs
 title: Algorithm 11 (A11)
 description: Open standard for deterministic reasoning
-logo: /docs/a11-diagram.svg
+logo: a11-diagram.svg
 
 nav_order: 1
 
 # Navigation structure
 nav:
   - title: Overview
-    url: /docs/a11_overview.html
+    url: a11_overview.html
   - title: Key Concepts
-    url: /docs/a11_key_concepts.html
+    url: a11_key_concepts.html
   - title: AI Developers
-    url: /docs/a11_for_ai_developers.html
+    url: a11_for_ai_developers.html
   - title: Autonomous Systems
-    url: /docs/a11_for_autonomous_systems_developers.html
+    url: a11_for_autonomous_systems_developers.html
   - title: Versions
-    url: /docs/versions.html
+    url: versions.html
