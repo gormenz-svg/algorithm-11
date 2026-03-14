@@ -3,10 +3,6 @@ title: Algorithm 11 (A11)
 description: Open standard for deterministic reasoning
 logo: a11-diagram.svg
 
-aux_links:
-  "Repository":
-    - "https://github.com/gormenz-svg/algorithm-11"
-
 nav_order: 1
 
 # Navigation structure
