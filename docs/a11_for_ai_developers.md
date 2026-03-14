@@ -94,7 +94,7 @@ Developers must:
 - preserve all structural invariants  
 - ensure correct handling of weighting pairs and recursion  
 
-**→ Refer to the A11‑Agent specification in the root of this repository.**
+**→ [Refer to the A11‑Agent specification in the root of this repository.](https://github.com/gormenz-svg/algorithm-11)**
 
 ---
 
