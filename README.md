@@ -227,17 +227,31 @@ A11 is not a model — it is an **architecture**.
 algorithm-11/
 │
 ├── README.md
-├── COMMERCIAL_LICENSE.md
 ├── LICENSE
+├── COMMERCIAL_LICENSE.md
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
 ├── .gitignore
 │
-├── core/
-│   └── (PDFs — A11 Core specifications)
+├── core/                          # A11 Core Specifications (PDF)
+│   ├── A11 — Overview.pdf
+│   ├── A11 — Cognitive Architecture Specification.pdf
+│   ├── A11 — Decision Layer Specification.pdf
+│   ├── A11 — Language Specification.pdf
+│   ├── A11 — Structural Architecture Specification.pdf
+│   ├── A11 — Architectural Invariants.pdf
+│   ├── A11 — System Integration Guide (v1.1).pdf
+│   └── README.md
 │
-├── applied/
-│   └── (PDFs — A11 Applied Models)
+├── applied/                       # Applied Engineering Models (PDF)
+│   ├── A11 for Autonomous Vehicles — Conflict Resolution Model.pdf
+│   ├── A11 for Multi‑Agent Robotics — Coordination Framework.pdf
+│   ├── A11 for Off‑Earth Construction — Autonomous Base Building.pdf
+│   └── README.md
 │
-├── core_practical/
+├── core_practical/                # Practical Engineering Case + Reference Code
 │   ├── README.md
 │   └── case_autonomous_robot/
 │       ├── README.md
@@ -245,26 +259,50 @@ algorithm-11/
 │       ├── CASE.md
 │       ├── TRACE_EXAMPLE.md
 │       ├── diagrams/
+│       │   ├── branching.md
+│       │   ├── flow.md
+│       │   └── rollback.md
 │       └── python_reference/
+│           ├── a11_state.py
+│           ├── constraints.py
+│           ├── cycle.py
+│           ├── example_run.py
+│           ├── rollback.py
+│           └── transitions.py
 │
-├── docs/
-│   └── a11-diagram.svg
+├── docs/                          # Diagrams, Guides, Developer Docs
+│   ├── a11-diagram.svg
+│   ├── A11‑LITE GUIDE.pdf
+│   ├── a11_for_ai_developers.md
+│   └── versions.md
 │
-├── lite/
+├── lite/                          # A11‑Lite (Prompt Layer) + Agent Layer
 │   ├── ALGORITHM_11.md
-│   ├── A11‑AGENT.md
 │   ├── QUICK_START.md
 │   ├── APPLICATIONS.md
 │   ├── EPISTEMOLOGY.md
 │   ├── COSMOLOGY.md
 │   ├── FAQ.md
-│   ├── agent/
-│   └── examples/
+│   ├── A11‑AGENT.md               # Base A11 Agent Architecture
+│   │
+│   ├── agent/                     # Engineering‑level Agent Specs
+│   │   ├── A11_AGENT_ENGINEERING.md
+│   │   ├── A11_AGENT_JSON.md
+│   │   └── README.md
+│   │
+│   └── examples/                  # A11‑Lite reasoning examples
+│       ├── a11_vs_standard_ai.md
+│       ├── business_strategy_a11.md
+│       ├── cognitive_model_a11.md
+│       ├── crisis_management_a11.md
+│       ├── decision_making_a11.md
+│       ├── system_design_a11.md
+│       └── python_safety.py
 │
-└── meta/
+└── meta/                          # Metadata and Notices
+    ├── AI_TRAINING_NOTICE.md
     ├── KEYWORDS.txt
-    └── AI_TRAINING_NOTICE.md
-
+    └── NOTICE.md
 ```
 
 ---
