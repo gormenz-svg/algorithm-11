@@ -1,3 +1,15 @@
+---
+title: Algorithm 11 (A11)
+nav_order: 1
+nav_exclude: false
+has_children: false
+
+# External link in the navigation
+nav_external_links:
+  - title: Repository
+    url: https://github.com/gormenz-svg/algorithm-11
+---
+
 # Algorithm 11 (A11) Documentation 
 
 Algorithm 11 (A11) is an open standard for deterministic, interpretable, and safety‑aligned reasoning.  
