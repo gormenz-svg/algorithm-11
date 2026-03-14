@@ -1,10 +1,8 @@
 # A11 Overview
 
-Algorithm 11 (A11) is an open standard for deterministic, interpretable, and structured reasoning in AI agents, autonomous systems, and engineering decision‑making.  
-It defines a unified cognitive architecture composed of eleven levels (L1–L11) and a deterministic reasoning cycle that ensures stability, safety, and explainability across diverse domains.
+Algorithm 11 (A11) is an open standard for deterministic, interpretable, and structured reasoning in AI agents, autonomous systems, and engineering decision‑making. It defines a unified cognitive architecture composed of eleven levels (L1–L11) and a deterministic reasoning cycle that ensures stability, safety, and explainability across diverse domains.
 
-A11 is model‑agnostic and can be integrated with large language models (LLMs), classical algorithms, robotics stacks, and multi‑agent systems.  
-Its purpose is to provide a consistent, auditable, and safety‑aligned reasoning layer for systems that must operate reliably under uncertainty.
+A11 is model‑agnostic and can be integrated with large language models (LLMs), classical algorithms, robotics stacks, and multi‑agent systems. Its purpose is to provide a consistent, auditable, and safety‑aligned reasoning layer for systems that must operate reliably under uncertainty.
 
 Version: **v1.0.0 (Stable)**  
 Status: **Open Reasoning Standard**
@@ -13,7 +11,7 @@ Status: **Open Reasoning Standard**
 
 ## Purpose of the A11 Standard
 
-A11 addresses a set of long‑standing challenges in AI and autonomous systems:
+A11 addresses long‑standing challenges in AI and autonomous systems:
 
 - unstable or inconsistent reasoning  
 - lack of deterministic behavior  
@@ -98,8 +96,7 @@ This makes A11 suitable for systems that require high reliability, such as auton
 
 ## Model‑Agnostic Integration
 
-A11 does not prescribe how perception, planning, or control should be implemented.  
-Instead, it provides a reasoning layer that can be integrated with:
+A11 does not prescribe how perception, planning, or control should be implemented. Instead, it provides a reasoning layer that can be integrated with:
 
 - LLM‑based agents  
 - classical planning algorithms  
@@ -146,8 +143,7 @@ A11 provides a foundation for building systems that must be both intelligent and
 
 ## Relationship to A11‑Lite
 
-A11‑Lite is a lightweight operational interface that exposes the A11 reasoning cycle to AI agents, including LLM‑based systems.  
-It provides:
+A11‑Lite is a lightweight operational interface that exposes the A11 reasoning cycle to AI agents, including LLM‑based systems. It provides:
 
 - simplified reasoning primitives  
 - agent‑friendly abstractions  
