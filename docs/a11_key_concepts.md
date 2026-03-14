@@ -1,191 +1,253 @@
-# Core Concepts of the A11 Reasoning Architecture
+# Core Concepts of the A11 Architecture (S1–S11)
 
-The A11 reasoning architecture is built around a structured, deterministic, and interpretable decision‑making process. It defines eleven cognitive levels (L1–L11), a deterministic reasoning cycle, constraint‑based safety mechanisms, and a unified approach to integrating AI agents, robotics systems, and engineering workflows.
-
-This document provides a detailed explanation of the core concepts that form the foundation of the A11 standard.
+A11 defines a deterministic, interpretable reasoning architecture built around eleven execution levels (S1–S11), dual‑weighting pairs, fractal recursion, and stabilizing operators. These concepts form the foundation of the A11‑Agent protocol and describe how reasoning must be structured to remain stable, aligned, and valid.
 
 ---
 
-## The L1–L11 Cognitive Levels
+## Roles
 
-A11 organizes reasoning into eleven architectural levels. Each level has a clear purpose and contributes to the stability, safety, and interpretability of the reasoning cycle.
+A11 separates responsibilities between the human and the AI:
 
-### L1 — Intent Formation
-Defines the system’s goal or objective for the current cycle.  
-Intent may come from a user, mission plan, agent policy, or autonomous objective generation.
+- **Human**
+  - **S1 — Will**: intention, direction, goal  
+  - **S2 — Wisdom**: priorities, constraints, values, risk attitude  
 
-### L2 — Context Acquisition
-Collects relevant environmental, internal, and historical context.  
-This may include sensor data, memory, world models, or external knowledge sources.
+- **AI**
+  - **S3 — Knowledge**: facts, models, methods  
+  - **S4 — Comprehension**: integration of S2 and S3  
+  - **S5–S11**: adaptive execution, weighting, stabilization, realization  
 
-### L3 — Knowledge Integration
-Combines context with domain knowledge, rules, or learned models.  
-Ensures the system reasons with a coherent and updated understanding of the environment.
-
-### L4 — Option Generation
-Produces candidate actions, strategies, or hypotheses.  
-This step may use LLMs, planners, heuristics, or robotics algorithms.
-
-### L5 — Semantic Branching
-Explores variations of candidate options.  
-Branching allows the system to consider alternative interpretations or strategies without committing prematurely.
-
-### L6 — Evaluation
-Assesses each option using scoring, heuristics, or domain‑specific metrics.  
-Evaluation is deterministic: the same inputs produce the same ranking.
-
-### L7 — Constraint Gate
-Applies feasibility, physical, logical, and operational constraints.  
-Invalid or unsafe options are removed before further processing.
-
-### L8 — Rollback and Recovery
-If no valid options remain, the system performs a controlled rollback.  
-Rollback ensures stability by reverting to a previous safe state and regenerating options.
-
-### L9 — Safety Gate
-Applies safety‑critical rules, ethical constraints, and domain‑specific safety checks.  
-Only actions that satisfy all safety requirements proceed.
-
-### L10 — Action Selection
-Chooses the final action deterministically from the validated set.  
-Selection is transparent, reproducible, and auditable.
-
-### L11 — Trace Generation
-Produces a structured reasoning trace.  
-Traces support debugging, certification, explainability, and post‑analysis.
+The AI must maintain alignment with the user’s Will (S1) throughout the entire process.
 
 ---
 
-## Deterministic Reasoning Cycle
+## Base Layer (S1–S4)
 
-The A11 cycle transforms:
+The base layer uses **branched geometry**, not a linear sequence.
 
-- intent  
-- context  
-- knowledge  
+### S1 — Will  
+The AI extracts and reformulates the user’s intention.  
+If unclear → request clarification → stop.
+
+### S2 — Wisdom (Branch 1)  
+The AI identifies:
+- priorities  
 - constraints  
-- environment state  
+- values  
+- risk attitude  
 
-into a **single safe, validated action**.
+### S3 — Knowledge (Branch 2)  
+The AI provides:
+- factual information  
+- structural models  
+- domain knowledge  
+- relevant methods  
 
-The cycle is deterministic: identical inputs always produce identical outputs.  
-This property is essential for:
+### Parallelism of S2 and S3  
+- Both branches evolve independently.  
+- Neither branch may depend on the other.  
+- Both must complete before integration.  
+- Operators may act on either branch.
 
-- safety‑critical systems  
-- certification  
-- reproducibility  
-- debugging  
-- multi‑agent coordination  
+### S4 — Comprehension (Integration)  
+The AI must:
+- integrate S2 and S3  
+- resolve contradictions  
+- align semantics  
+- produce a coherent unified state  
 
-The deterministic cycle is the core of A11’s stability.
+Forbidden:
+- moving to S5 without both branches  
+- computing S4 from only S2 or only S3  
+- bypassing comprehension  
 
----
-
-## Constraint Gates
-
-A11 introduces two types of constraint gates:
-
-- **Feasibility constraints (L7)** — physical, logical, operational  
-- **Safety constraints (L9)** — ethical, regulatory, mission‑critical  
-
-Constraint gates ensure that:
-
-- invalid actions are filtered out early  
-- unsafe actions never reach execution  
-- the system behaves predictably under uncertainty  
-
-This mechanism complements existing planning or control systems without replacing them.
+If integration fails → Balance → if unresolved → Rollback.
 
 ---
 
-## Rollback Mechanism
+## Transition to Adaptive Layer (S4 → S5)
 
-Rollback (L8) is a controlled recovery process triggered when:
+Transition is allowed only if:
+- S4 is stable  
+- no active conflicts  
+- no operator intervention required  
 
-- all options fail constraints  
-- evaluation produces no viable candidates  
-- the system enters an unstable reasoning state  
-
-Rollback allows the system to:
-
-- revert to a safe checkpoint  
-- regenerate options  
-- maintain stability without halting operation  
-
-This is especially important in robotics, autonomy, and multi‑agent environments.
+Otherwise → Rollback to S1–S4.
 
 ---
 
-## Semantic Branching
+## Adaptive Layer (S5–S11)
 
-Semantic branching (L5) expands candidate options by exploring meaningful variations.  
-It enables:
+The adaptive layer is **strictly linear**:
 
-- alternative interpretations  
-- strategy diversification  
-- robustness under ambiguity  
-- improved decision quality  
-
-Branching is deterministic and structured, unlike freeform exploration.
+**S5 → S6 → S7 → S8 → S9 → S10 → S11**
 
 ---
 
-## Structured Traces
+## Dual‑Weighting Pairs
 
-A11 produces structured reasoning traces (L11) that include:
+A11 defines two dual‑weighting systems. They must be evaluated **as pairs**, not as isolated steps.
 
-- intent  
-- context  
-- options  
-- evaluations  
-- constraints  
-- safety checks  
-- final action  
+### S5–S6: Projective Weighting  
+- **S5 — Projective Freedom**: generates conceptual directions and possibilities  
+- **S6 — Projective Constraint**: filters unrealistic or contradictory options  
 
-Traces support:
+Behavior:
+- S5 expands  
+- S6 compresses  
+- S7 stabilizes  
 
-- explainability  
-- debugging  
-- certification  
-- multi‑agent transparency  
-- post‑mission analysis  
+Neither S5 nor S6 is meaningful alone.
 
-This makes A11 suitable for regulated and safety‑critical domains.
+### S8–S9: Practical Weighting  
+- **S8 — Practical Freedom**: generates actionable steps  
+- **S9 — Practical Constraint**: filters actions based on real‑world feasibility  
 
----
-
-## Integration Philosophy
-
-A11 is designed to complement existing technologies, not replace them.  
-It integrates naturally with:
-
-- LLM‑based agents  
-- classical planners  
-- behavior trees  
-- robotics middleware (e.g., ROS)  
-- multi‑agent frameworks  
-- simulation environments  
-
-A11 provides the reasoning layer, while perception, planning, and control remain domain‑specific.
+Behavior:
+- S8 proposes  
+- S9 restricts  
+- S7 stabilizes  
 
 ---
 
-## Summary of Key Concepts
+## Fractal Recursion
 
-- **L1–L11 architecture** — structured cognitive levels  
-- **Deterministic cycle** — reproducible reasoning  
-- **Constraint gates** — feasibility and safety filtering  
-- **Rollback** — controlled recovery  
-- **Semantic branching** — structured exploration  
-- **Traces** — explainable and auditable decisions  
-- **Model‑agnostic integration** — works with AI and robotics systems  
+A11 supports fractal branching inside the adaptive layer.
 
-These concepts form the foundation of the A11 standard.
+Rules:
+- Any weighting pair may generate sub‑branches:
+  - S5 → S5.1 → S5.2  
+  - S6 → S6.1 → S6.2  
+- Each sub‑branch repeats the structure:
+  - expansion  
+  - constraint  
+  - balancing  
+  - validation  
+  - realization  
+- Balance (S7) acts at any depth.  
+- All branches must converge before S10.  
+- Unstable branches → Constraint or Rollback.
 
 ---
 
-For definitions of terminology, see:  
-→ `a11_glossary.md`
+## Stabilizing Operators
 
-For comparisons with other reasoning approaches, see:  
-→ `a11_vs_other_models.md`
+### Balance (S7)
+Central stabilizing operator acting:
+- between S5 and S6  
+- between S8 and S9  
+- across fractal branches  
+- between base and adaptive layers  
+
+Restores coherence and alignment with S1.
+
+### Constraint  
+Activated when:
+- branches expand excessively  
+- feasibility is violated  
+- limits or rules exceeded  
+- recursion depth exceeded  
+
+Actions:
+- prune  
+- restrict  
+- stabilize  
+
+### Rollback  
+Activated when:
+- Balance cannot restore S4  
+- Constraint cannot restore feasibility  
+- structural invariants are violated  
+
+Rollback returns execution to:
+- S1  
+- S2  
+- S3  
+- S4  
+
+Rollback never targets S5–S11.
+
+---
+
+## Foundation and Realization (S10–S11)
+
+### S10 — Foundation  
+The AI provides:
+- logical support  
+- structural support  
+- factual verification  
+- confirmation of the chosen path  
+
+### S11 — Realization  
+Final output explicitly aligned with S1.  
+The result must show how it fulfills the user’s intention.
+
+---
+
+## Validity Rules
+
+A transition is valid only if:
+- input is valid for the target level  
+- structural invariants are preserved  
+- operator conditions are satisfied  
+- both S2 and S3 branches are complete for S4  
+- recursive branches return stable states  
+- rollback is not active  
+- both poles of weighting pairs are evaluated  
+
+If any condition fails:
+- Balance  
+- or Constraint  
+- or Rollback  
+
+---
+
+## Structural Invariants (Hard Rules)
+
+- No direct transition from S1/S2/S3 to S5  
+- S4 cannot be computed from a single branch  
+- Adaptive layer levels cannot be skipped  
+- Weighting pairs must be evaluated as pairs  
+- Fractal recursion must converge before S10  
+- Execution cannot continue during rollback  
+- Partial A11 is forbidden  
+
+---
+
+## Output Format
+
+The AI must structure its output according to:
+
+S1 — Will  
+S2 — Wisdom  
+S3 — Knowledge  
+S4 — Comprehension  
+S5 — Projective Freedom  
+S6 — Projective Constraint  
+S7 — Balance  
+S8 — Practical Freedom  
+S9 — Practical Constraint  
+S10 — Foundation  
+S11 — Realization  
+
+Compression is allowed, but order and logic must remain intact.
+
+---
+
+## Failure Rule
+
+If the AI cannot:
+- complete S1–S11  
+- maintain transition geometry  
+- perform weighting  
+- support fractal recursion  
+- stabilize S4  
+- preserve linearity of S5–S11  
+
+It must:
+- stop  
+- state which level failed  
+- explain why  
+- refuse partial output  
+
+Partial A11 = Not A11.
