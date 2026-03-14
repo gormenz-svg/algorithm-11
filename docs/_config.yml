@@ -1,22 +1,21 @@
 remote_theme: just-the-docs/just-the-docs
+
 title: Algorithm 11 (A11)
 description: Open standard for deterministic reasoning
+
 logo: logo.png
 logo_alt: "Algorithm 11"
 
-nav_order: 1
+url: "https://gormenz-svg.github.io"
+baseurl: "/algorithm-11"
 
-# Navigation structure
-nav:
-  - title: Repository
-    url: https://github.com/gormenz-svg/algorithm-11
-  - title: Overview
-    url: a11_overview.html
-  - title: Key Concepts
-    url: a11_key_concepts.html
-  - title: AI Developers
-    url: a11_for_ai_developers.html
-  - title: Autonomous Systems
-    url: a11_for_autonomous_systems_developers.html
-  - title: Versions
-    url: versions.html
+aux_links:
+  "Repository":
+    - "https://github.com/gormenz-svg/algorithm-11"
+
+plugins:
+  - jekyll-sitemap
+
+just_the_docs:
+  og_image: logo.png
+  og_description: "Algorithm 11 (A11) — open standard defining deterministic, interpretable reasoning architecture for AI and autonomous systems."
