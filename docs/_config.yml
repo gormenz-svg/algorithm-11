@@ -1,4 +1,4 @@
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 title: Algorithm 11 (A11)
 description: Open standard for deterministic reasoning
 logo: a11-diagram.svg
