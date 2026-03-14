@@ -1,46 +1,31 @@
 # A11 for Autonomous Systems Developers
 
-This document provides a practical engineering guide for applying **Algorithm 11 (A11)** in autonomous systems, robotics platforms, and multi‑agent environments.  
-It complements the canonical specifications in `/core` and the applied engineering models in `/applied`.
+This document provides a concise engineering guide for applying Algorithm 11 (A11) in autonomous systems and robotics.  
+For the full execution protocol, refer to the canonical A11‑Agent specification in the root of this repository.
 
-A11 provides a deterministic, interpretable, and safety‑aligned reasoning layer that can be embedded into autonomous robots, vehicles, drones, industrial systems, and off‑Earth construction platforms.
-
-Version: **v1.0.0 (Stable)**  
-Audience: **Robotics engineers, autonomy developers, systems architects**
+A11 provides a deterministic, interpretable, and safety‑aligned reasoning layer that can be embedded into robots, vehicles, drones, industrial systems, and multi‑agent environments.
 
 ---
 
-## 1. Role of A11 in Autonomous Systems
+## 1. Role of A11 in Autonomy
 
-A11 functions as a **deterministic decision layer** between:
+A11 acts as a **decision layer** between mission logic and low‑level planning/control.  
+It does not replace perception or controllers.  
+It provides:
 
-- perception (sensors, SLAM, CV, mapping)  
-- control (motion planning, actuation, low‑level controllers)
-
-A11 does not replace perception or control.  
-It provides the **reasoning and decision‑making structure** that ensures:
-
-- predictable behavior  
-- interpretable decisions  
-- safety‑aligned logic  
 - stable multi‑step reasoning  
+- constraint‑aligned decisions  
 - deterministic conflict resolution  
-- rollback and recovery mechanisms  
+- rollback and recovery  
+- interpretable decision traces  
 
-This makes A11 suitable for:
-
-- autonomous robots  
-- autonomous vehicles  
-- multi‑agent systems  
-- industrial automation  
-- off‑Earth autonomous construction  
-- hybrid human–robot decision loops  
+This makes A11 suitable for robotics, autonomous vehicles, industrial automation, and off‑Earth autonomous construction.
 
 ---
 
-## 2. How A11 Integrates into an Autonomy Stack
+## 2. Integration in an Autonomy Stack
 
-A typical autonomy stack:
+A typical stack:
 
 ```
 Perception → Localization → Mapping → Planning → Control
@@ -48,101 +33,51 @@ Perception → Localization → Mapping → Planning → Control
 A11 Decision Layer
 ```
 
-A11 sits **above planning** and **below mission logic**, providing:
 
-- structured reasoning  
-- constraint evaluation  
-- semantic branching  
+A11 contributes:
+
+- structured reasoning (S1–S4)  
+- conceptual and practical weighting (S5–S6, S8–S9)  
+- stabilization (S7)  
 - feasibility filtering  
-- deterministic selection  
-- rollback and recovery  
-- traceable decision logs  
+- validated decisions (S10)  
+- aligned outputs (S11)  
 
-This makes the system:
-
-- more interpretable  
-- more predictable  
-- easier to validate  
-- safer under uncertainty  
+This improves predictability, safety, and auditability.
 
 ---
 
-## 3. Key A11 Features for Robotics
+## 3. Key Features for Robotics
 
-### Deterministic Reasoning Cycle (L1–L11)
-A11 ensures that every decision follows a reproducible sequence:
-
-- intent → options → constraints → evaluation → selection → realization
-
-### Constraint Gates (L7, L9)
-Critical for:
-
-- safety envelopes  
-- resource limits  
-- mission constraints  
-- environmental hazards  
-
-### Rollback (L8)
-Allows safe recovery when:
-
-- perception is uncertain  
-- planning fails  
-- constraints conflict  
-- the system enters unstable states  
-
-### Semantic Branching (L5)
-Supports:
-
-- multi‑hypothesis reasoning  
-- scenario exploration  
-- multi‑agent coordination  
-
-### Traceability (L11)
-Every decision produces a structured trace, enabling:
-
-- debugging  
-- certification  
-- safety audits  
-- explainability  
+- **Core Layer (S1–S4):** intent, constraints, knowledge, integration  
+- **Adaptive Layer (S5–S11):** linear deterministic execution  
+- **Dual weighting pairs:** projective (S5–S6) and practical (S8–S9)  
+- **Balance (S7):** stabilizes reasoning and resolves conflicts  
+- **Rollback:** safe recovery when integration or feasibility fails  
+- **Traceability:** structured logs for debugging and certification  
 
 ---
 
 ## 4. Recommended Integration Pattern
 
-### Step 1 — Define the robot’s intent model (L1)
-Mission goals, operator commands, or autonomous objectives.
-
-### Step 2 — Connect perception outputs to A11 knowledge (L3)
-Sensor fusion → semantic state → A11 knowledge frame.
-
-### Step 3 — Implement constraint gates (L7, L9)
-Safety, kinematics, energy, mission rules.
-
-### Step 4 — Connect A11 output to planners and controllers
-A11 selects the **action class**, planners compute trajectories.
-
-### Step 5 — Log reasoning traces (L11)
-For debugging, certification, and safety validation.
+1. Define mission intent → S1  
+2. Map perception outputs into knowledge → S3  
+3. Implement constraint gates → S6, S9  
+4. Use A11 output as action class → planners compute trajectories  
+5. Log S1–S11 traces for validation and safety audits  
 
 ---
 
 ## 5. Reference Implementation
 
-A minimal Python reference implementation is available in:
+A minimal Python implementation is available in:
 
 ```
 /core_practical/case_autonomous_robot/python_reference/
 ```
 
-It includes:
 
-- state structures  
-- transitions (L1–L11)  
-- constraints  
-- rollback  
-- deterministic cycle execution  
-
-This implementation is intended as a **template** for robotics teams.
+It includes state structures, transitions (S1–S11), constraints, rollback, and deterministic cycle execution.
 
 ---
 
@@ -150,41 +85,29 @@ This implementation is intended as a **template** for robotics teams.
 
 Domain‑specific models are available in `/applied`:
 
-- Autonomous Vehicles — conflict resolution  
-- Multi‑Agent Robotics — coordination  
-- Off‑Earth Construction — autonomous base building  
+- autonomous vehicles  
+- multi‑agent robotics  
+- off‑Earth autonomous construction  
 
-These documents show how A11 behaves in real engineering scenarios.
-
----
-
-## 7. Best Practices for Robotics Teams
-
-- Keep A11 deterministic — avoid stochastic branching inside the cycle  
-- Use rollback aggressively in uncertain environments  
-- Treat constraints as first‑class citizens  
-- Log every cycle for traceability  
-- Keep perception and control independent from A11  
-- Use A11 as the **reasoning brain**, not the controller  
+These show how A11 behaves in real engineering scenarios.
 
 ---
 
-## 8. Future Extensions
+## 7. Best Practices
 
-Planned additions include:
-
-- swarm robotics patterns  
-- multi‑robot negotiation models  
-- uncertainty‑aware reasoning  
-- energy‑constrained decision loops  
-- human–robot collaborative reasoning  
+- keep A11 deterministic  
+- use rollback aggressively under uncertainty  
+- treat constraints as first‑class  
+- log every cycle  
+- keep perception and control independent  
+- use A11 as the reasoning layer, not the controller  
 
 ---
 
-## 9. Related Resources
+## 8. Related Resources
 
-- **Core Standard:** `/core`  
-- **A11‑Lite:** `/lite`  
-- **Applied Models:** `/applied`  
-- **Practical Layer:** `/core_practical`  
-- **Architecture Diagram:** `/docs/a11-diagram.svg`  
+- `/core` — canonical standard  
+- `/lite` — A11‑Lite  
+- `/applied` — engineering models  
+- `/core_practical` — reference implementations  
+- `/docs/a11-diagram.svg` — architecture diagram
