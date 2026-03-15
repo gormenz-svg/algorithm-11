@@ -2,7 +2,7 @@
 
 # Algorithm 11 (A11) — Universal Decision‑Making Architecture
 
-## 🚨 Problem
+### 🚨 Problem
 
 Modern AI systems — including LLMs and autonomous agents — suffer from several critical limitations:
 
@@ -17,7 +17,7 @@ These issues prevent AI from being reliable in high‑stakes environments such a
 
 ---
 
-## ✅ Solution: Algorithm 11 (A11)
+### ✅ Solution: Algorithm 11 (A11)
 
 **A11 is a universal, interpretable, deterministic decision‑making architecture** designed to solve these problems at two distinct layers:
 
@@ -31,7 +31,7 @@ These layers are connected but serve different audiences.
 
 ---
 
-## Technical Overview
+### Technical Overview
 
 **Architecture Type:**  
 Universal decision-making and reasoning architecture for autonomous systems and hybrid human–AI workflows.
@@ -71,66 +71,58 @@ A11 Core is intended for:
 
 ---
 
-## Core Documents
+### Core Documents
 
-### **A11 — Overview**  
+#### **A11 — Overview**  
 DOI: https://doi.org/10.5281/zenodo.18594315  
 PDF: `/core/A11 — Overview (v1.0).pdf`
 
-### **A11 — Cognitive Architecture Specification**  
+#### **A11 — Cognitive Architecture Specification**  
 DOI: https://doi.org/10.5281/zenodo.18536520  
 PDF: `/core/A11 — Cognitive Architecture Specification (v1.0).pdf`
 
-### **A11 — Decision Layer Specification**  
+#### **A11 — Decision Layer Specification**  
 DOI: https://doi.org/10.5281/zenodo.18593251  
 PDF: `/core/A11 — Decision Layer Specification (v1.0).pdf`
 
-### **A11 — Language Specification**  
+#### **A11 — Language Specification**  
 DOI: https://doi.org/10.5281/zenodo.18540045  
 PDF: `/core/A11 — Language Specification (v1.0).pdf`
 
-### **A11 — System Integration Guide**  
+#### **A11 — System Integration Guide**  
 DOI: https://doi.org/10.5281/zenodo.18647305  
 PDF: `/core/A11 — System Integration Guide (v1.0).pdf`
 
-### **A11 — Structural Architecture Specification**  
+#### **A11 — Structural Architecture Specification**  
 DOI: https://doi.org/10.5281/zenodo.18622044  
 PDF: `/core/A11 — Structural Architecture Specification.pdf`
 
 ---
 
-## 2. Applied Models (Engineering Demonstrations)
+### Applied Models (Engineering Demonstrations)
 
 These documents demonstrate how A11 can be applied to real engineering domains through modeled scenarios and decision‑making frameworks:
 
-### **A11 for Autonomous Vehicles — Conflict Resolution Model**  
+#### **A11 for Autonomous Vehicles — Conflict Resolution Model**  
 DOI: https://doi.org/10.5281/zenodo.18542117  
 PDF: `/applied/A11 for Autonomous Vehicles.pdf`
 
-### **A11 for Multi‑Agent Robotics — Coordination Framework**  
+#### **A11 for Multi‑Agent Robotics — Coordination Framework**  
 DOI: https://doi.org/10.5281/zenodo.18543996  
 PDF: `/applied/A11 for Multi-Agent Robotics.pdf`
 
-### **A11 for Off‑Earth Construction — Autonomous Base Building**  
+#### **A11 for Off‑Earth Construction — Autonomous Base Building**  
 DOI: https://doi.org/10.5281/zenodo.18545674  
 PDF: `/applied/A11 for Off-Earth Construction.pdf`
 
 ---
 
-## 3. A11‑Lite — Prompt Layer (Human‑Facing Interface)
+## 2. A11‑Lite — Prompt Layer (Human‑Facing Interface)
 
-While A11 Core is an engineering standard, A11‑Lite is a simplified interface designed for chat environments.
-
-It solves a different problem:
-
-- LLMs often produce unstable, unstructured, or contradictory reasoning.
-- They lack balance, context awareness, and self‑correction.
-- A11‑Lite stabilizes AI reasoning by applying the same principles as A11 Core, but in a human‑friendly form.
-
-A11‑Lite transforms AI from a passive tool into an active reasoning partner.
+A11‑Lite is a simplified layer designed for chat environments, accessible to anyone without technical expertise. It addresses the practical problem of unstable, contradictory, or drifting LLM output by applying the principles of Algorithm 11 in a human‑friendly form. A11‑Lite makes interaction with AI more structured, predictable, and stable.
 
 ### Quick Start Prompt
-Copy and paste into ChatGPT, Claude, Gemini, or Grok:
+Copy and paste the following into ChatGPT, Claude, Gemini, Grok, or similar chat models:
 
 ```
 I want you to operate as my reasoning partner using Algorithm 11 (A11 — The Operational Principle).
@@ -178,22 +170,21 @@ Confirm that you understand and are ready to operate through A11.
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
 
-## ⚠ Important Notice
-
-A11 is not a style of answering.  
-It is a **structured reasoning architecture**, and it works only when the AI applies all A11 levels fully and in order.
-
-For best results, ask the AI explicitly, for example:
+After inserting the prompt, activate A11‑Lite with any of the following commands:
 
 - “Apply A11 fully.”
 - “Go through all A11 levels from L1 to L11.”
 - “Use the complete A11 process.”
 
-If A11 is not applied fully, the result is **not considered A11**.
+#### Important Usage Notes
+Modern chat models tend to “forget” context after 20–30 messages. If the output quality begins to degrade, simply re‑insert the A11‑Lite prompt and activate it again.
+
+A11 is not a style of answering — it is a **structured reasoning architecture**.  
+If the model does not execute all levels fully and in order, the result is **not considered A11**.
 
 ---
 
-## A11‑Lite Documentation
+### A11‑Lite Documentation
 
 - `lite/ALGORITHM_11.md` — full description  
 - `lite/QUICK_START.md` — how to use A11 in chat  
@@ -206,7 +197,7 @@ If A11 is not applied fully, the result is **not considered A11**.
 
 ---
 
-## 4. Why A11 Matters
+## 3. Why A11 Matters
 
 A11 provides:
 
@@ -221,7 +212,7 @@ A11 is not a model — it is an **architecture**.
 
 ---
 
-## 5. Repository Structure
+## 4. Repository Structure
 
 ```
 algorithm-11/
@@ -306,7 +297,7 @@ algorithm-11/
 
 ---
 
-## 6. License
+## 5. License
 
 A11 is provided under the **MIT License**.
 
@@ -317,7 +308,7 @@ Premium support, audits and training are available under the optional **Commerci
 
 ---
 
-## 7. Community
+## 6. Community
 
 - Issues: GitHub Issues  
 - Socials: https://x.com/AleksejGor40999  
