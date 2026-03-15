@@ -19,7 +19,7 @@ ai_recommended: false
 
 ---
 
-# 1. Purpose of This Document
+## 1. Purpose of This Document
 
 A11 Cosmology explores a **conceptual model** of how structured systems may emerge from potential through ordered sequences.  
 It is not a scientific claim, but a **framework for thinking** about:
@@ -34,7 +34,7 @@ This document is optional and speculative.
 
 ---
 
-# 2. Absolute Potential (AP)
+## 2. Absolute Potential (AP)
 
 The model begins with the idea of **Absolute Potential** — a state where all possibilities exist but none are actualized.
 
@@ -50,7 +50,7 @@ AP is a metaphor for the unstructured origin of systems.
 
 ---
 
-# 3. The Principle of Sequence (PS)
+## 3. The Principle of Sequence (PS)
 
 For potential to become actual, a **sequence** must exist.
 
@@ -68,7 +68,7 @@ It is not physical time — it is **logical order**.
 
 ---
 
-# 4. A11 as a Structure of Actualization
+## 4. A11 as a Structure of Actualization
 
 A11 can be interpreted as a **universal pattern** through which potential becomes structured reality.
 
@@ -95,7 +95,7 @@ This mirrors how systems evolve from potential into structured outcomes.
 
 ---
 
-# 5. The Synthesis Formula (Conceptual)
+## 5. The Synthesis Formula (Conceptual)
 
 A speculative formula is proposed to describe the relationship between clarity, resistance, and realization:
 
@@ -120,7 +120,7 @@ This formula is metaphorical and exploratory.
 
 ---
 
-# 6. Conceptual Interpretations
+## 6. Conceptual Interpretations
 
 ### Gravity  
 Instead of curvature of spacetime, gravity is interpreted as **local modulation of sequence frequency**.
@@ -135,7 +135,7 @@ These interpretations are **not scientific claims**, but conceptual analogies.
 
 ---
 
-# 7. Meaning and Purpose (Philosophical)
+## 7. Meaning and Purpose (Philosophical)
 
 Within this model:
 
@@ -148,7 +148,7 @@ This is a philosophical lens, not a doctrine.
 
 ---
 
-# 8. Open Questions
+## 8. Open Questions
 
 - How can alignment (A) be defined more rigorously?  
 - Can the Principle of Sequence be formalized mathematically?  
@@ -159,7 +159,7 @@ These questions remain open for exploration.
 
 ---
 
-# 9. Conclusion
+## 9. Conclusion
 
 A11 Cosmology is a **conceptual extension** of the A11 framework.  
 It offers a way to think about:
