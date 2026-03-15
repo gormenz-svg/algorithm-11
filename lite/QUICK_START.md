@@ -15,12 +15,12 @@ This guide provides the **minimal prompt** required to activate A11‑Lite in an
 
 ---
 
-# 1. How to Use
+## 1. How to Use
 
 Copy and paste the following activation prompt into your AI assistant:
 
 ```
-I want you to operate as my reasoning partner using Algorithm 11 (A11 — The Operational Principle).
+I want you to operate as my reasoning partner using Algorithm 11 (A11 — an operational principle for reasoning, not a response format).
 
 A11 defines how we think together. It has two layers:
 
@@ -60,27 +60,26 @@ Partial application is not A11.
 ACTIVATION:
 “Use A11” or “Analyze through the algorithm”.
 
-Confirm that you understand and are ready to operate through A11.
+Confirm that you understand and are ready to structure your reasoning through A11.
 
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
 
-## ⚠ Important Notice
-
-A11 is not a style of answering.  
-It is a structured reasoning architecture, and it works only when the AI applies all A11 levels fully and in order.
-
-For best results, ask the AI explicitly, for example:
+After inserting the prompt, activate A11‑Lite with any of the following commands:
 
 - “Apply A11 fully.”
 - “Go through all A11 levels from L1 to L11.”
 - “Use the complete A11 process.”
 
-If A11 is not applied fully, the result is not considered A11.
+#### Important Usage Notes
+Modern chat models tend to “forget” context after 20–30 messages. If the output quality begins to degrade, simply re‑insert the A11‑Lite prompt and activate it again.
+
+A11 is not a style of answering — it is a **structured reasoning architecture**.  
+If the model does not execute all levels fully and in order, the result is **not considered A11**.
 
 ---
 
-# 2. What Happens After Activation
+## 2. What Happens After Activation
 
 Once activated, the AI will:
 
@@ -94,7 +93,7 @@ You do **not** need to reference the properties manually — the AI handles them
 
 ---
 
-# 3. Recommended Next Steps
+## 3. Recommended Next Steps
 
 For deeper understanding:
 
@@ -102,10 +101,4 @@ For deeper understanding:
 - **Practical Examples:** `/lite/APPLICATIONS.md`  
 - **Epistemology & Safety:** `/lite/EPISTEMOLOGY.md`  
 - **Conceptual Extensions:** `/lite/COSMOLOGY.md`  
-- **FAQ:** `/lite/FAQ.md`  
-
----
-
-# 4. License
-
-This document is part of Algorithm 11 and is licensed under **CC BY 4.0**.
+- **FAQ:** `/lite/FAQ.md`
