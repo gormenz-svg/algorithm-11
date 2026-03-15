@@ -165,7 +165,7 @@ Partial application is not A11.
 ACTIVATION:
 “Use A11” or “Analyze through the algorithm”.
 
-Confirm that you understand and are ready to operate through A11.
+Confirm that you understand and are ready to structure your reasoning through A11.
 
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
