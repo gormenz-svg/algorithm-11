@@ -13,7 +13,7 @@ This FAQ covers the most common questions about **Algorithm 11 (A11)**, includin
 
 ---
 
-# 1. General Questions
+## 1. General Questions
 
 ### **What is Algorithm 11 (A11)?**
 A11 is a **structured decision‑making architecture** that defines how humans and AI systems can reason together.  
@@ -43,7 +43,7 @@ A11 works **on top of** existing AI systems (LLMs, agents, autonomous systems) a
 
 ---
 
-# 2. A11‑Lite (Prompt Layer)
+## 2. A11‑Lite (Prompt Layer)
 
 ### **What is A11‑Lite?**
 A11‑Lite is the **human‑facing interface** to A11.  
@@ -63,7 +63,7 @@ Copy the Quick Start Prompt from:
 
 /lite/ALGORITHM_11.md
 
-Код
+Code
 
 Paste it into ChatGPT, Claude, Gemini, or Grok.
 
@@ -81,7 +81,7 @@ The AI handles the rest.
 
 ---
 
-# 3. Safety & Reliability
+## 3. Safety & Reliability
 
 ### **Does A11 bypass safety filters?**
 No.  
@@ -118,7 +118,7 @@ A11 is anti‑dogmatic by design.
 
 ---
 
-# 4. Technical & Integration Questions
+## 4. Technical & Integration Questions
 
 ### **Can A11 be integrated into autonomous systems?**
 Yes.  
@@ -155,7 +155,7 @@ It is open for research, critique, and refinement.
 
 ---
 
-# 5. Epistemology & Limitations
+## 5. Epistemology & Limitations
 
 ### **Can A11 create a “closed loop” of reasoning?**
 Yes — any coherent framework can.  
@@ -181,7 +181,7 @@ A11 is a tool — not a guarantee of truth.
 
 ---
 
-# 6. Practical Usage
+## 6. Practical Usage
 
 ### **What types of tasks benefit most from A11?**
 - planning  
@@ -210,7 +210,7 @@ You can adapt it to your domain or workflow.
 
 ---
 
-# 7. Licensing & Community
+## 7. Licensing & Community
 
 ### **Is A11 free to use?**
 Yes.  
@@ -226,7 +226,7 @@ A11 is in the public domain.
 
 ---
 
-# Summary
+## Summary
 
 A11 is a **universal reasoning architecture** that improves clarity, stability, and collaboration between humans and AI.  
 A11‑Lite provides a simple way to use it in chat environments.  
