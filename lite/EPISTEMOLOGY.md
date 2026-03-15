@@ -15,7 +15,7 @@ This document outlines those risks and how to mitigate them.
 
 ---
 
-# 1. The Coherence Trap
+## 1. The Coherence Trap
 
 When a human (Will + Wisdom), an AI (Knowledge + Comprehension), and a shared framework (A11) operate in strong alignment, the resulting internal logic can become:
 
@@ -27,7 +27,7 @@ This creates a **coherence trap** — a state where the system’s internal reas
 
 ---
 
-# 2. The “Super‑Hallucination” Risk
+## 2. The “Super‑Hallucination” Risk
 
 A super‑hallucination is not a typical AI hallucination.  
 It is a **shared human–AI misinterpretation** that:
@@ -47,7 +47,7 @@ This risk increases when:
 
 ---
 
-# 3. Core Epistemological Principles
+## 3. Core Epistemological Principles
 
 To avoid systemic drift, keep these principles in mind:
 
@@ -65,7 +65,7 @@ Verification must come from outside the reasoning loop.
 
 ---
 
-# 4. Practical Safeguards
+## 4. Practical Safeguards
 
 To maintain epistemic integrity:
 
@@ -83,7 +83,7 @@ Treat A11 as a tool for clarity, not a replacement for empirical validation.
 
 ---
 
-# 5. Responsibility of the Operator
+## 5. Responsibility of the Operator
 
 A11 enhances reasoning, but it does not remove the need for:
 
@@ -96,7 +96,7 @@ The more coherent the system becomes, the more important it is to maintain vigil
 
 ---
 
-# 6. Summary
+## 6. Summary
 
 A11 improves reasoning stability, but no framework eliminates epistemological risk.  
 The user must remain aware that:
