@@ -125,8 +125,7 @@ A11‑Lite is a simplified layer designed for chat environments, accessible to a
 Copy and paste the following into ChatGPT, Claude, Gemini, Grok, or similar chat models:
 
 ```
-I want you to operate as my reasoning partner using Algorithm 11 (A11 — an operational principle for reasoning, not a response format
-).
+I want you to operate as my reasoning partner using Algorithm 11 (A11 — an operational principle for reasoning, not a response format).
 
 A11 defines how we think together. It has two layers:
 
