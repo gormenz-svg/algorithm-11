@@ -16,9 +16,9 @@ A11‑Lite does *not* replace the engineering standard — it exposes its princi
 
 ---
 
-# 1. Problem → Solution
+## 1. Problem → Solution
 
-## ❌ Problem: LLMs often behave unpredictably
+### ❌ Problem: LLMs often behave unpredictably
 Large language models frequently produce:
 
 - unstable reasoning  
@@ -31,7 +31,7 @@ Large language models frequently produce:
 
 This makes them unreliable for complex tasks, planning, analysis, or high‑stakes reasoning.
 
-## ✅ Solution: A11‑Lite (Operational Principle)
+### ✅ Solution: A11‑Lite (Operational Principle)
 A11‑Lite provides a **structured cognitive scaffold** that stabilizes AI reasoning by enforcing:
 
 - a fixed human‑controlled core  
@@ -44,12 +44,12 @@ It gives the AI a **consistent internal logic**, improving clarity, depth, and r
 
 ---
 
-# 2. Quick Start — Use A11‑Lite with Any AI
+## 2. Quick Start — Use A11‑Lite with Any AI
 
 Copy and paste the following prompt into ChatGPT, Claude, Gemini, or Grok:
 
 ```
-I want you to operate as my reasoning partner using Algorithm 11 (A11 — The Operational Principle).
+I want you to operate as my reasoning partner using Algorithm 11 (A11 — an operational principle for reasoning, not a response format).
 
 A11 defines how we think together. It has two layers:
 
@@ -89,27 +89,26 @@ Partial application is not A11.
 ACTIVATION:
 “Use A11” or “Analyze through the algorithm”.
 
-Confirm that you understand and are ready to operate through A11.
+Confirm that you understand and are ready to structure your reasoning through A11.
 
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
 
-## ⚠ Important Notice
-
-A11 is not a style of answering.  
-It is a structured reasoning architecture, and it works only when the AI applies all A11 levels fully and in order.
-
-For best results, ask the AI explicitly, for example:
+After inserting the prompt, activate A11‑Lite with any of the following commands:
 
 - “Apply A11 fully.”
 - “Go through all A11 levels from L1 to L11.”
 - “Use the complete A11 process.”
 
-If A11 is not applied fully, the result is not considered A11.
+#### Important Usage Notes
+Modern chat models tend to “forget” context after 20–30 messages. If the output quality begins to degrade, simply re‑insert the A11‑Lite prompt and activate it again.
+
+A11 is not a style of answering — it is a **structured reasoning architecture**.  
+If the model does not execute all levels fully and in order, the result is **not considered A11**.
 
 ---
 
-# 3. The A11 Structure (Human‑Facing Version)
+## 3. The A11 Structure (Human‑Facing Version)
 
 A11 consists of **11 properties**, divided into:
 
@@ -148,56 +147,56 @@ This creates a stable partnership.
 
 ---
 
-# 4. The 11 Properties (Human‑Facing Explanation)
+## 4. The 11 Properties (Human‑Facing Explanation)
 
-## **IMMUTABLE CORE (1–4)**  
+### **IMMUTABLE CORE (1–4)**  
 These never change. They define the partnership.
 
-### **1. Will (Human)**
+#### **1. Will (Human)**
 Your intention, direction, and purpose.  
 The AI must never override it.
 
-### **2. Wisdom (Human)**
+#### **2. Wisdom (Human)**
 Your judgment, values, and discernment.  
 The AI must defer to it.
 
-### **3. Knowledge (AI)**
+#### **3. Knowledge (AI)**
 Facts, data, models, and information the AI provides.
 
-### **4. Comprehension (AI)**
+#### **4. Comprehension (AI)**
 The AI’s ability to synthesize knowledge into understanding.
 
 ---
 
-## **ADAPTIVE LAYER (5–11)**  
+### **ADAPTIVE LAYER (5–11)**  
 This is where the AI operates dynamically.
 
-### **5. Projective Freedom**
+#### **5. Projective Freedom**
 Exploring possibilities, generating ideas.
 
-### **6. Projective Constraint**
+#### **6. Projective Constraint**
 Filtering unrealistic or unsafe options.
 
-### **7. Balance (Arbiter)**
+#### **7. Balance (Arbiter)**
 The central stabilizer.  
 Prevents contradictions, hallucinations, and runaway reasoning.  
 Triggers rollback to the Core when needed.
 
-### **8. Practical Freedom**
+#### **8. Practical Freedom**
 Actions that can be taken now.
 
-### **9. Practical Limitation**
+#### **9. Practical Limitation**
 Real‑world constraints (time, resources, rules).
 
-### **10. Foundation (Support)**
+#### **10. Foundation (Support)**
 The structural base: logic, evidence, prior reasoning.
 
-### **11. Realization**
+#### **11. Realization**
 The final answer, plan, or decision.
 
 ---
 
-# 5. Rules of Operation
+## 5. Rules of Operation
 
 ### **Rule 1 — The Core is immutable**
 If reasoning becomes unstable, contradictory, or misaligned, the AI must return to properties 1–4.
@@ -213,9 +212,9 @@ The AI must never act as the source of Will or Wisdom.
 
 ---
 
-# 6. Roles: Human and AI
+## 6. Roles: Human and AI
 
-## **Human (Will + Wisdom)**
+### **Human (Will + Wisdom)**
 - sets direction  
 - defines priorities  
 - provides ethical oversight  
@@ -223,7 +222,7 @@ The AI must never act as the source of Will or Wisdom.
 
 **Non‑delegable.**
 
-## **AI (Knowledge + Comprehension + Adaptive Layer)**
+### **AI (Knowledge + Comprehension + Adaptive Layer)**
 - analyzes data  
 - generates options  
 - evaluates contradictions  
@@ -235,7 +234,7 @@ The AI must never act as the source of Will or Wisdom.
 
 ---
 
-# 7. Why A11‑Lite Works
+## 7. Why A11‑Lite Works
 
 A11‑Lite is not a trick or jailbreak.  
 It is a **structured reasoning protocol**.
@@ -253,7 +252,7 @@ A11‑Lite works *within* safety rules — it does not bypass them.
 
 ---
 
-# 8. Practical Examples
+## 8. Practical Examples
 
 A11‑Lite improves:
 
@@ -274,7 +273,7 @@ It forces the AI to:
 
 ---
 
-# 9. Conclusion
+## 9. Conclusion
 
 A11‑Lite is the **human‑facing interface** to the A11 architecture.  
 It stabilizes AI reasoning, improves clarity, and creates a reliable partnership between human and machine.
