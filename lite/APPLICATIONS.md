@@ -15,7 +15,7 @@ Each example below demonstrates how A11’s structure (Immutable Core + Adaptive
 
 ---
 
-# 1. How A11 Works in Practice
+## 1. How A11 Works in Practice
 
 Every application follows the same pattern:
 
@@ -41,7 +41,7 @@ This structure makes systems **robust, interpretable, and adaptive**.
 
 ---
 
-# 2. Deep Space Exploration
+## 2. Deep Space Exploration
 
 **Domain:** Autonomous spacecraft, planetary probes, asteroid mining  
 **Problem:**  
@@ -60,7 +60,7 @@ Spacecraft adapt to unexpected conditions while preserving mission integrity.
 
 ---
 
-# 3. Large‑Scale Manufacturing
+## 3. Large‑Scale Manufacturing
 
 **Domain:** High‑throughput factories, decentralized production  
 **Problem:**  
@@ -78,7 +78,7 @@ Factories scale output without losing consistency or safety.
 
 ---
 
-# 4. Fault‑Tolerant Networks
+## 4. Fault‑Tolerant Networks
 
 **Domain:** Satellite constellations, distributed communication networks  
 **Problem:**  
@@ -97,7 +97,7 @@ Self‑healing networks that maintain service despite failures.
 
 ---
 
-# 5. Autonomous Medical Systems
+## 5. Autonomous Medical Systems
 
 **Domain:** Robotic surgery, remote medical autonomy  
 **Problem:**  
@@ -115,7 +115,7 @@ Safe autonomous surgery with controlled adaptation.
 
 ---
 
-# 6. Decentralized Robot Swarms
+## 6. Decentralized Robot Swarms
 
 **Domain:** Construction drones, warehouse robots, exploration swarms  
 **Problem:**  
@@ -134,7 +134,7 @@ Scalable, fault‑tolerant swarm intelligence.
 
 ---
 
-# 7. AI Reasoning and Hallucination Reduction
+## 7. AI Reasoning and Hallucination Reduction
 
 **Domain:** Large language models, reasoning engines  
 **Problem:**  
@@ -153,7 +153,7 @@ More accurate, grounded, and interpretable AI responses.
 
 ---
 
-# 8. Cross‑Domain Patterns
+## 8. Cross‑Domain Patterns
 
 Across all domains, A11 consistently provides:
 
@@ -173,7 +173,7 @@ This combination yields systems that are **robust, adaptive, and explainable**.
 
 ---
 
-# 9. Why A11 Outperforms Traditional Approaches
+## 9. Why A11 Outperforms Traditional Approaches
 
 | Traditional Approach | Limitation | A11 Advantage |
 |----------------------|------------|---------------|
@@ -187,7 +187,7 @@ A11 integrates the strengths of multiple paradigms while addressing their weakne
 
 ---
 
-# 10. Future Applications
+## 10. Future Applications
 
 A11 can extend to:
 
@@ -201,7 +201,7 @@ Any domain requiring **stability + adaptability** benefits from A11.
 
 ---
 
-# 11. Conclusion
+## 11. Conclusion
 
 A11 provides a universal pattern:
 
