@@ -193,7 +193,7 @@ If the model does not execute all levels fully and in order, the result is **not
 - `lite/COSMOLOGY.md` — extended reality model  
 - `lite/examples/` — A11 vs standard AI comparisons
 - `lite/agent/` — A11 agents
-- [A11-AGENT](https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md) — base architecture A11 Agent
+- 🔥[A11-AGENT](https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md) — base architecture A11 Agent
 
 ---
 
