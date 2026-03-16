@@ -32,7 +32,7 @@ Standard AI chats tend to drift over time (usually after 20–30 messages), so s
 
 ---
 
-## Base (Fundamental) A11 Agent
+## 🔥 Base (Fundamental) A11 Agent
 
 👉 **lite/A11_AGENT.md**  
 https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md
