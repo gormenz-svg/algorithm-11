@@ -1,5 +1,5 @@
 # A11 Reference Implementation — Full Cycle (A11-Agent Compatible)
-# Version 2.0 — L-marking preserved, architecture corrected
+# Version 2.1 — L-marking preserved, architecture corrected
 
 from a11_state import ReasoningTrace, ContextFrame
 import transitions
@@ -80,7 +80,7 @@ def run_cycle(mission, priorities, rules, env_snapshot, robot_state, models):
 
     # If invariants fail → rollback to L1–L4
     if all(b.constraint_result is False for b in branches):
-        context = rollback.invoke(context, trace)
+        context = rollback.rollback_operator(context, trace)
         return {"move_to": None, "reason": "rollback_no_feasible"}, trace
 
     # -------------------------
