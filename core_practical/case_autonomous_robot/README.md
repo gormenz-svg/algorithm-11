@@ -13,7 +13,7 @@ It is intended for engineers who want to understand how A11 behaves in a real sc
 
 ---
 
-# 1. Purpose of This Case
+## 1. Purpose of This Case
 
 This case demonstrates:
 
@@ -29,7 +29,7 @@ It provides a **complete, reproducible example** of a full A11 reasoning cycle.
 
 ---
 
-# 2. Directory Structure
+## 2. Directory Structure
 
 ```
 case_autonomous_robot/
@@ -51,7 +51,7 @@ TRACE_EXAMPLE.md        ← complete reasoning trace (L1–L11)
 
 ---
 
-# 3. Key Files
+## 3. Key Files
 
 ### **STRUCTURE.md**
 Defines the architectural skeleton of the demonstration case:
@@ -97,7 +97,7 @@ This file shows how A11 behaves step‑by‑step.
 
 ---
 
-# 4. Diagrams
+## 4. Diagrams
 
 The `/diagrams/` directory contains ASCII diagrams illustrating:
 
@@ -109,7 +109,7 @@ These diagrams help engineers visualize the architecture.
 
 ---
 
-# 5. Python Reference Implementation
+## 5. Python Reference Implementation
 
 The `/python_reference/` directory contains a minimal, deterministic implementation of:
 
@@ -131,7 +131,7 @@ It is **not** a production system — it is a demonstration of architectural pri
 
 ---
 
-## Running the Example
+### Running the Example
 
 From inside `/python_reference/`:
 
@@ -149,7 +149,7 @@ The script will:
 
 ---
 
-# 6. Relation to A11 Core
+## 6. Relation to A11 Core
 
 This case **does not modify the A11 standard**.  
 It only demonstrates how the standard behaves in a real scenario.
@@ -165,7 +165,7 @@ SYSTEM_INTEGRATION_GUIDE.md
 
 ---
 
-# 7. Extending This Case
+## 7. Extending This Case
 
 Engineers may extend this case by adding:
 
@@ -178,6 +178,3 @@ Engineers may extend this case by adding:
 
 All extensions must remain compliant with A11 invariants.
 
----
-
-# End of README.md
