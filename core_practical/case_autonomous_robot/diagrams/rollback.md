@@ -1,28 +1,27 @@
-## ROLLBACK DIAGRAM (L8)
-Shows how A11 reverts to L4 when invariants are violated
+## ROLLBACK OPERATOR (A11)
+Rollback is an operator, not a level. It restores stability when invariants fail.
 
-```
                  ┌──────────────────────────┐
-                 │   L7 — CONSTRAINT GATE    │
+                 │     S7 — BALANCE         │
+                 │  detects contradictions   │
                  └───────────────┬──────────┘
                                  │
                                  ▼
-                     All branches FAIL?
+                     Invariants violated?
                      ┌───────────────┐
-                     │ YES           │
+                     │     YES       │
                      └───────┬───────┘
                              │
                              ▼
                  ┌──────────────────────────┐
-                 │       L8 — ROLLBACK      │
+                 │     ROLLBACK OPERATOR    │
                  │  restore stable context  │
-                 │  adjust priorities       │
+                 │  prune invalid branches  │
                  │  rebuild constraints     │
                  └───────────────┬──────────┘
                                  │
                                  ▼
                  ┌──────────────────────────┐
-                 │   return to L4 — COMPREH │
-                 │   rebuild context frame  │
+                 │  return to S1–S4 (Core)  │
+                 │  rebuild comprehension    │
                  └──────────────────────────┘
-```
