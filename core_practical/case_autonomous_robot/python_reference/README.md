@@ -1,142 +1,155 @@
 # A11 Reference Implementation (Python)
-## Minimal, Deterministic Demonstration of A11 L1–L11 Reasoning
+Minimal, Deterministic Demonstration of A11 S1–S11 Reasoning
 
-This directory contains a **minimal Python reference implementation** of Algorithm 11 (A11) for the “Autonomous Robot Decision Control” demonstration case.
+This directory contains a minimal Python reference implementation of Algorithm 11 (A11) for the “Autonomous Robot Decision Control” demonstration case.
 
 The implementation is intentionally simple, deterministic, and transparent.  
 Its purpose is to help engineers understand how A11 operates in practice:
 
-- how semantic branches are generated (L5)  
-- how evaluation is performed (L6)  
-- how constraints are applied (L7)  
-- how rollback is triggered (L8)  
-- how feasibility filtering works (L9)  
-- how deterministic selection is made (L10)  
-- how the final action and reasoning trace are produced (L11)
+- how semantic options are generated (S5 — Projective Freedom)
+- how conceptual filtering works (S6 — Projective Constraint)
+- how stabilization is applied (S7 — Balance)
+- how actionable options are generated (S8 — Practical Freedom)
+- how feasibility filtering works (S9 — Practical Constraint)
+- how deterministic realization is produced (S10–S11)
+- how Rollback operates as an operator, not a level
 
-This is **not** a production system.  
-It is a **didactic reference** aligned with the A11 architecture.
+This is not a production system.  
+It is a didactic reference aligned with the canonical A11‑Agent architecture.
 
 ---
 
-# 1. Directory Structure
+## 1. Directory Structure
 
 ```
 python_reference/
-README.md            ← this file
-a11_state.py         ← data structures for A11 reasoning
-transitions.py       ← implementation of L1–L11 transitions
-constraints.py       ← hard/soft constraint logic
-rollback.py          ← rollback mechanism (L8)
-cycle.py             ← full A11 reasoning cycle
-example_run.py       ← runnable example
+│
+├── README.md            ← this file
+├── a11_state.py         ← data structures for A11 reasoning
+├── transitions.py       ← implementation of S1–S11 transitions
+├── constraints.py       ← hard/soft constraint logic
+├── rollback.py          ← rollback operator implementation
+├── cycle.py             ← full A11 reasoning cycle
+└── example_run.py       ← runnable example
 ```
 
 ---
 
-# 2. Purpose of This Implementation
+## 2. Purpose of This Implementation
 
 The reference code demonstrates:
 
-- how A11 separates levels L1–L11  
-- how each level has a single responsibility  
-- how reasoning trace is constructed  
-- how deterministic decision‑making emerges from the architecture  
-- how constraints and rollback interact  
-- how semantic branching leads to interpretable choices  
+- how A11 separates levels **S1–S11**
+- how each level has a **single responsibility**
+- how the reasoning trace is constructed
+- how deterministic decision‑making emerges from the architecture
+- how constraints and the **rollback operator** interact
+- how semantic branching leads to interpretable choices
 
 The code mirrors the structure described in:
 
-- `CASE.md`  
-- `STRUCTURE.md`  
-- `TRACE_EXAMPLE.md`  
+- `CASE.md`
+- `STRUCTURE.md`
+- `TRACE_EXAMPLE.md`
 
 This ensures consistency between documentation and implementation.
 
 ---
 
-# 3. File Overview
+## 3. File Overview
 
-### **a11_state.py**
+### a11_state.py
+
 Defines all data structures used during the reasoning cycle:
 
-- `RobotState`  
-- `EnvironmentSnapshot`  
-- `ContextFrame`  
-- `BranchCandidate`  
-- `EvaluationResult`  
-- `ReasoningTrace`  
+- `RobotState`
+- `EnvironmentSnapshot`
+- `ContextFrame`
+- `BranchCandidate`
+- `EvaluationResult`
+- `ReasoningTrace`
 
 These classes keep the implementation clean and explicit.
 
 ---
 
-### **transitions.py**
+### transitions.py
+
 Implements all A11 levels:
 
-- **L1** — Will  
-- **L2** — Wisdom  
-- **L3** — Knowledge  
-- **L4** — Comprehension  
-- **L5** — Semantic Branching  
-- **L6** — Evaluation  
-- **L7** — Constraint Gate  
-- **L8** — Rollback (marker)  
-- **L9** — Feasibility  
-- **L10** — Deterministic Selection  
-- **L11** — Execution  
+- **S1 — Will**
+- **S2 — Wisdom**
+- **S3 — Knowledge**
+- **S4 — Comprehension**
+- **S5 — Projective Freedom**
+- **S6 — Projective Constraint**
+- **S7 — Balance**
+- **S8 — Practical Freedom**
+- **S9 — Practical Constraint**
+- **S10 — Foundation**
+- **S11 — Realization**
 
-Each level is a separate function, reflecting the A11 architectural invariant:  
-**“No level may perform the responsibility of another.”**
+Each level is a separate function, reflecting the A11 architectural invariant:
+
+> **No level may perform the responsibility of another.**
 
 ---
 
-### **constraints.py**
+### constraints.py
+
 Contains hard and soft constraint logic.
 
 Hard constraints include:
 
 - energy budget  
-- safety priority (risk must not be HIGH when safety is top priority)
+- safety priority  
+- feasibility limits  
 
 Soft constraints are placeholders in this demo.
 
 ---
 
-### **rollback.py**
-Implements the rollback mechanism (L8).
+### rollback.py
+
+Implements the **Rollback Operator**.
+
+In A11:
+
+- Rollback is **not a level**
+- It is invoked when **invariants fail**
+- It returns execution to **S1–S4**
+- It restores a **stable context frame**
 
 In this demonstration:
 
 - rollback is marked in the trace  
 - context is preserved  
-- no re‑planning is performed  
-
-This keeps the implementation simple while preserving architectural correctness.
+- re‑planning is minimal for clarity  
 
 ---
 
-### **cycle.py**
+### cycle.py
+
 Executes a full A11 reasoning cycle:
 
-1. builds trace  
-2. runs L1–L4  
-3. generates branches (L5)  
-4. evaluates them (L6)  
-5. applies constraints (L7)  
-6. triggers rollback if needed (L8)  
-7. filters infeasible branches (L9)  
-8. selects the best branch (L10)  
-9. produces final action (L11)
+1. runs **S1–S4** (Core Layer)
+2. generates semantic options (**S5**)
+3. applies conceptual filtering (**S6**)
+4. stabilizes (**S7**)
+5. generates actionable options (**S8**)
+6. applies feasibility constraints (**S9**)
+7. stabilizes again (**S7**)
+8. builds structural foundation (**S10**)
+9. produces final realization (**S11**)
+10. invokes **Rollback Operator** if needed
 
 This file is the main entry point for engineers.
 
 ---
 
-### **example_run.py**
-A runnable demonstration script.
+### example_run.py
 
-To execute:
+A runnable demonstration script.
 
 ```
 python3 example_run.py
@@ -147,34 +160,35 @@ The script prints:
 - selected branch  
 - evaluation metrics  
 - rollback info  
-- final action  
+- final realization  
 
 This helps engineers quickly understand how A11 behaves.
 
 ---
 
-# 4. Design Principles
+## 4. Design Principles
 
 This reference implementation follows these principles:
 
-### **1. Determinism**
+### 1. Determinism
 All outputs are predictable and reproducible.
 
-### **2. Transparency**
+### 2. Transparency
 Every step of the reasoning cycle is visible in the trace.
 
-### **3. Architectural Purity**
-Each A11 level has a single responsibility.
+### 3. Architectural Purity
+Each A11 level has a single responsibility.  
+Rollback is an operator, not a level.
 
-### **4. Minimalism**
+### 4. Minimalism
 The code avoids unnecessary complexity.
 
-### **5. Educational Value**
-The implementation is designed to be read and understood, not optimized.
+### 5. Educational Value
+The implementation is designed to be read and understood.
 
 ---
 
-# 5. Limitations
+## 5. Limitations
 
 This implementation is:
 
@@ -183,11 +197,11 @@ This implementation is:
 - not optimized for performance  
 - not intended for deployment  
 
-It is a **teaching tool** that demonstrates the architecture of A11.
+It is a teaching tool that demonstrates the architecture of A11.
 
 ---
 
-# 6. Extending the Implementation
+## 6. Extending the Implementation
 
 Engineers may extend this reference by adding:
 
@@ -199,7 +213,3 @@ Engineers may extend this reference by adding:
 - richer rollback logic  
 
 All extensions must remain compliant with A11 invariants.
-
----
-
-# End of README.md
