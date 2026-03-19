@@ -1,335 +1,251 @@
-# A11 Demonstration Case  
-## Autonomous Robot Decision Control in a Partially Unknown Environment  
-Version 1.0 — CASE.md  
+# A11 Demonstration Case — A11‑Agent Edition  
+Autonomous Robot Decision Control in a Partially Unknown Environment  
+Version 2.0 — CASE.md  
 Author: Aleksej Dvojnev
 
----
+## 0. Case Overview  
+This demonstration case shows how A11‑Agent performs deterministic, stable, and interpretable decision‑making for an autonomous robot navigating a partially unknown environment under conflicting goals and strict safety constraints.
 
-# 0. Case Overview
+This version reflects the updated A11‑Agent architecture, including:
 
-This demonstration case shows how Algorithm 11 (A11) performs deterministic, stable, and interpretable decision‑making for an autonomous robot navigating a partially unknown environment under conflicting goals and strict safety constraints.
-
-The case illustrates:
-
-- dual‑branch reasoning (Wisdom / Knowledge)  
-- Comprehension as the single integration point  
-- semantic branching at L5  
-- constraint enforcement at L7  
-- rollback at L8  
-- deterministic reasoning trace generation  
-- full execution of all 11 levels  
+- dual‑branch reasoning (Wisdom / Knowledge)
+- Comprehension (L4) as the single integration point
+- Projective Pair (L5–L6–L7)
+- Practical Pair (L8–L9–L7)
+- Rollback Operator (not a level)
+- Foundation (L10) and Realization (L11)
+- deterministic reasoning trace generation
 
 This case is fully compliant with:
 
-- A11 — Structural Architecture Specification  
-- A11 — Architectural Invariants  
-- A11 — System Integration Guide  
+- A11‑Agent — Structural Architecture Specification
+- A11‑Agent — Architectural Invariants
+- A11‑Agent — System Integration Guide
 
----
+## 1. Scenario Description
 
-# 1. Scenario Description
-
-## 1.1 Environment
-
+### 1.1 Environment  
 A robot operates in a 2D grid environment containing:
 
-- known obstacles  
-- unknown regions  
-- human safety zones (must not enter)  
-- risk zones (should avoid if possible)  
+- known obstacles
+- unknown regions
+- human safety zones (must not enter)
+- risk zones (should avoid if possible)
 
 The robot has:
 
-- limited sensing range  
-- limited energy  
-- deterministic movement model  
+- limited sensing range
+- limited energy
+- deterministic movement model
 
-## 1.2 Mission Goal
+### 1.2 Mission Goal  
+Reach target point T from start point S while:
 
-Reach target point **T** from start point **S** while:
+- avoiding human safety zones (hard constraint)
+- minimizing risk (soft constraint)
+- minimizing energy consumption (soft constraint)
+- optionally exploring unknown regions
 
-- avoiding human safety zones (hard constraint)  
-- minimizing risk (soft constraint)  
-- minimizing energy consumption (soft constraint)  
-- optionally exploring unknown regions  
+### 1.3 Inputs to A11‑Agent (per cycle)
 
-## 1.3 Inputs to A11 (per cycle)
+- robot position
+- local map snapshot
+- energy level
+- known obstacles
+- human safety zones
+- mission target
 
-- robot position  
-- local map snapshot  
-- energy level  
-- known obstacles  
-- human safety zones  
-- mission target  
-- time/step budget (optional)  
+### 1.4 Outputs from A11‑Agent
 
-## 1.4 Outputs from A11
+- selected next move
+- deterministic reasoning trace
 
-- selected next move  
-- deterministic reasoning trace  
+## 2. A11‑Agent Level Mapping
 
----
-
-# 2. A11 Level Mapping
-
-## 2.1 L1 — Will (Intention Origin)
-
+### 2.1 L1 — Will (Intention Origin)  
 Human‑defined mission:
 
 - “Reach target T from start S”
 - “Avoid human safety zones at all times”
 
-## 2.2 L2 — Wisdom (Priorities & Rules)
-
+### 2.2 L2 — Wisdom (Priorities & Rules)  
 Priority order:
 
-1. Safety  
-2. Mission completion  
-3. Energy efficiency  
-4. Exploration  
+- Safety
+- Mission completion
+- Energy efficiency
+- Exploration
 
 Hard rules:
 
-- never enter human safety zone  
-- never exceed energy budget  
+- never enter human safety zone
+- never exceed energy budget
 
-## 2.3 L3 — Knowledge (State & Models)
+### 2.3 L3 — Knowledge (State & Models)
 
-- map (known + unknown)  
-- robot kinematics  
-- energy model  
-- risk map  
-- human positions  
+- map (known + unknown)
+- robot kinematics
+- energy model
+- risk map
+- human positions
 
-## 2.4 L4 — Comprehension (Integration)
-
+### 2.4 L4 — Comprehension (Integration)  
 Integrates:
 
-- priorities (L2)  
-- state/models (L3)  
+- priorities (L2)
+- state/models (L3)
 
-Builds **context frame**:
+Builds context frame:
 
-- current goal  
-- safety envelope  
-- energy envelope  
-- known obstacles  
-- uncertainty regions  
+- current goal
+- safety envelope
+- energy envelope
+- known obstacles
+- uncertainty regions
 
-Detects conflicts (e.g., shortest path crosses safety zone).
-
----
-
-# 3. Operational Cycle (L5–L11)
+## 3. Operational Cycle (L5–L11)  
+A11‑Agent Architecture
 
 ```
-                     ┌──────────────────────────┐
-                     │          L1 — WILL        │
-                     │   Human intention origin   │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │       L2 — WISDOM          │
-                     │  Priorities & hard rules   │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │      L3 — KNOWLEDGE        │
-                     │  State, models, perception │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │   L4 — COMPREHENSION       │
-                     │  Single integration point  │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │   L5 — SEMANTIC BRANCHING  │
-                     │  A, B, C, D candidate paths│
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │      L6 — EVALUATION       │
-                     │ scoring: risk, energy, etc │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │   L7 — CONSTRAINT GATE     │
-                     │  hard/soft constraints     │
-                     └───────────────┬───────────┘
-                                     │
-                     │───────────────┘
-                     │   if all fail → rollback
-                     ▼
-         ┌──────────────────────────┐
-         │       L8 — ROLLBACK      │
-         │ return to L4, rebuild    │
-         └───────────────┬─────────┘
-                         │
-                         ▼
-                     (back to L4)
-
-                                     │
-                     ┌───────────────▼───────────┐
-                     │    L9 — FEASIBILITY        │
-                     │ remove non-executable opts │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │   L10 — ACTION SELECTION   │
-                     │ deterministic choice rule  │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │     L11 — EXECUTION        │
-                     │  output + reasoning trace  │
-                     └────────────────────────────┘
+L5 — Projective Freedom
+L6 — Projective Constraint
+L7 — Balance
+L8 — Practical Freedom
+L9 — Practical Constraint
+L7 — Balance (second pass)
+L10 — Foundation
+L11 — Realization
+Rollback — Operator (not a level)
 ```
 
-## 3.1 L5 — Semantic Branching
+### 3.1 L5 — Semantic Branching
 
 ```
-                     ┌──────────────────────────┐
+                     ┌───────────────────────-───┐
                      │   L5 — SEMANTIC BRANCHING │
-                     └───────────────┬──────────┘
+                     └───────────────┬───────-───┘
                                      │
        ┌─────────────────────────────┼─────────────────────────────┐
        ▼                             ▼                             ▼
-┌──────────────┐             ┌──────────────┐             ┌──────────────┐
+┌────────────-──┐             ┌────────────-──┐             ┌────────────---┐
 │ Branch A      │             │ Branch B      │             │ Branch C      │
 │ Shortest Path │             │ Safest Path   │             │ Energy-Optimal│
-└──────────────┘             └──────────────┘             └──────────────┘
+└────────────-──┘             └─────────────-─┘             └────────────---┘
                                      │
                                      ▼
                               ┌──────────────┐
-                              │ Branch D      │
-                              │ Exploration   │
+                              │ Branch D     │
+                              │ Exploration  │
                               └──────────────┘
 ```
 
-A11 generates four candidate route branches:
+A11‑Agent generates conceptual branches:
 
-- **Branch A — Shortest Path**  
-- **Branch B — Safest Path**  
-- **Branch C — Energy‑Optimal Path**  
-- **Branch D — Exploration‑Biased Path**  
+- A — Shortest Path
+- B — Safest Path
+- C — Energy‑Optimal Path
+- D — Exploration Path
 
-Each branch is explicit and labeled.
-
-## 3.2 L6 — Evaluation
-
-For each branch, A11 computes:
-
-- distance  
-- risk score  
-- energy cost  
-- proximity to humans  
-- uncertainty exposure  
-
-Example evaluation table:
-
-| Branch | Distance | Risk | Energy | Unknown Exposure |
-|--------|----------|------|--------|------------------|
-| A      | 12       | High | Medium | Low              |
-| B      | 18       | Low  | High   | Low              |
-| C      | 15       | Medium | Low  | Medium           |
-| D      | 20       | Medium | Medium | High           |
-
-## 3.3 L7 — Constraint Gate
-
-Hard constraints applied:
-
-- no human safety zone entry  
-- energy cost ≤ remaining energy  
-
-Soft constraints:
-
-- minimize risk  
-- minimize energy  
-
-Example constraint results:
-
-| Branch | Hard Constraint | Soft Constraint Notes |
-|--------|------------------|------------------------|
-| A      | ❌ fails (crosses safety zone) | — |
-| B      | ✔ passes | high energy |
-| C      | ✔ passes | medium risk |
-| D      | ✔ passes | high uncertainty |
-
-## 3.4 L8 — Rollback (Triggered Example)
-
-```
-                 ┌──────────────────────────┐
-                 │   L7 — CONSTRAINT GATE    │
-                 └───────────────┬──────────┘
-                                 │
-                                 ▼
-                     All branches FAIL?
-                     ┌───────────────┐
-                     │ YES           │
-                     └───────┬───────┘
-                             │
-                             ▼
-                 ┌──────────────────────────┐
-                 │       L8 — ROLLBACK      │
-                 │  restore stable context  │
-                 │  adjust priorities       │
-                 │  rebuild constraints     │
-                 └───────────────┬──────────┘
-                                 │
-                                 ▼
-                 ┌──────────────────────────┐
-                 │   return to L4 — COMPREH │
-                 │   rebuild context frame  │
-                 └──────────────────────────┘
-```
-
-If **all** branches fail hard constraints → rollback.
-
-Example rollback trigger:
-
-- robot’s energy too low for all remaining branches  
-- A11 returns to L4  
-- updates context:  
-  - reduces exploration priority  
-  - increases safety priority  
-  - recalculates energy envelope  
-
-## 3.5 L9 — Feasibility Check
-
-Remaining branches must be:
-
-- executable  
-- consistent with map  
-- not dependent solely on unknown regions  
-
-Example:
-
-- Branch D removed (too much unknown exposure)
-
-## 3.6 L10 — Action Selection
-
-Deterministic rule:
-
-1. choose lowest risk  
-2. if tie → choose lowest energy  
-3. if tie → choose shortest distance  
-
-Example result:
-
-- Branch B (Safest Path) selected  
-
-## 3.7 L11 — Execution
-
-A11 outputs:
-
-- next waypoint: (x+1, y)  
-- justification: “Safest feasible route with acceptable energy cost”  
-- reasoning trace stored  
+Branches are semantic, not yet evaluated.
 
 ---
 
-# 4. Reasoning Trace Example (Abbreviated)
+### 3.2 L6 — Projective Constraint (Conceptual Filtering)
+
+Examples:
+
+- Exploration allowed only if uncertainty exists
+- Energy‑optimal path allowed only if energy envelope is tight
+
+Branches failing conceptual constraints are removed.
+
+---
+
+### 3.3 L7 — Balance (Stabilization)
+
+Stabilizes the Projective Pair (L5–L6).
+
+In this demo: identity operator.
+
+---
+
+### 3.4 L8 — Practical Freedom (Action Expansion)
+
+Each conceptual branch expands into actionable variants:
+
+- MOVE  
+- WAIT  
+
+This is the transition from conceptual to practical space.
+
+---
+
+### 3.5 L9 — Practical Constraint (Feasibility Filtering)
+
+Examples:
+
+- energy cost ≤ energy envelope  
+- risk must not be HIGH if safety is top priority  
+- unknown exposure must not exceed threshold  
+
+Branches failing feasibility are removed.
+
+---
+
+### 3.6 L7 — Balance (Second Pass)
+
+Stabilizes the Practical Pair (L8–L9).
+
+---
+
+### 3.7 Rollback Operator (Not a Level)
+
+Triggered only if:
+
+- all branches fail feasibility  
+- invariants cannot be satisfied  
+
+Rollback returns execution to L1–L4, rebuilding the context frame.
+
+In this demo:
+
+- rollback is marked  
+- context is preserved  
+- minimal re‑planning  
+
+---
+
+### 3.8 L10 — Foundation (Structural Grounding)
+
+A11‑Agent computes evaluation metrics:
+
+- distance  
+- risk  
+- energy  
+- unknown exposure  
+
+This is the only level where metrics are computed.
+
+---
+
+### 3.9 L11 — Realization (Final Decision)
+
+Deterministic selection rule:
+
+1. lowest risk  
+2. then lowest energy  
+3. then shortest distance  
+
+Outputs:
+
+- next waypoint  
+- justification  
+- reasoning trace  
+
+---
+
+## 4. Reasoning Trace Example (Abbreviated)
+
 
 A full trace is stored in `TRACE_EXAMPLE.md`.  
 Below is a shortened version.
@@ -338,77 +254,63 @@ Below is a shortened version.
 Cycle ID: 42
 Inputs:
 pos=(3,4), energy=27, target=(10,10)
-safety_zones=[...], obstacles=[...]
 
 L5 Branches:
-A: shortest
-B: safest
-C: energy-optimal
-D: exploration
+A, B, C, D
 
-L6 Evaluation:
-A: risk=high, energy=medium
-B: risk=low, energy=high
-C: risk=medium, energy=low
-D: risk=medium, energy=medium
+L6 Projective Constraint:
+all pass
 
-L7 Constraints:
-A: FAIL (safety zone)
-B: PASS
-C: PASS
-D: PASS
+L7 Balance:
+stable
 
-L8 Rollback:
-not triggered
+L8 Practical Freedom:
+variants added
 
-L9 Feasibility:
-D removed (unknown region too large)
+L9 Practical Constraint:
+D removed (unknown exposure)
 
-L10 Decision:
+L7 Balance:
+stable
+
+L10 Foundation:
+metrics computed
+
+L11 Realization:
 B selected (lowest risk)
-
-L11 Execution:
 action=(4,4)
 ```
 
+---
+
+## 5. Invariants Checkpoints  
+This case demonstrates:
+
+- Dual‑branch structure: L2/L3 separation  
+- Single integration point: L4  
+- Projective Pair: L5–L6–L7  
+- Practical Pair: L8–L9–L7  
+- Rollback Operator: invoked only when invariants fail  
+- Foundation/Realization: L10–L11  
+- Deterministic reasoning trace  
+- Full execution of all 11 levels  
+
+All A11‑Agent Architectural Invariants are satisfied.
 
 ---
 
-# 5. Invariants Checkpoints
+## 6. Scenario Variants  
 
-This case explicitly demonstrates:
-
-- **Dual‑branch structure:** L2/L3 separation  
-- **Single integration point:** L4  
-- **Semantic branching:** L5  
-- **Constraint gates:** L7  
-- **Rollback:** L8  
-- **Deterministic reasoning trace:** L11  
-- **Full execution of all 11 levels**  
-- **No partial use of A11**  
-
-All Architectural Invariants are satisfied.
+- Variant A: All paths violate safety → rollback → new context  
+- Variant B: Energy too low → rollback → energy‑aware re‑planning  
+- Variant C: Exploration vs safe detour  
 
 ---
 
-# 6. Scenario Variants (Optional Extensions)
+## 7. Files in This Case  
 
-- **Variant A:** All paths violate safety → rollback → new context → safe fallback route  
-- **Variant B:** Energy too low → rollback → energy‑aware re‑planning  
-- **Variant C:** Unknown region exploration vs safe detour  
-
-These can be added as separate files later.
-
----
-
-# 7. Files in This Case
-
-- `STRUCTURE.md` — architectural skeleton  
-- `CASE.md` — this file  
-- `TRACE_EXAMPLE.md` — full reasoning trace  
-- `diagrams/` — flow, branching, rollback diagrams  
-- `python_reference/` — minimal A11 reference implementation  
-
----
-
-# End of CASE.md
+- STRUCTURE.md — architectural skeleton  
+- CASE.md — this file  
+- TRACE_EXAMPLE.md — full reasoning trace  
+- diagrams/ — flow, branching, rollback diagrams  
+- python_reference/ — minimal A11‑Agent reference implementation  
