@@ -1,5 +1,5 @@
-# A11 Reference Implementation — Full Cycle
-# Version 1.0
+# A11 Reference Implementation — Full Cycle (A11-Agent Compatible)
+# Version 2.0 — L-marking preserved, architecture corrected
 
 from a11_state import ReasoningTrace, ContextFrame
 import transitions
@@ -26,17 +26,18 @@ def run_cycle(mission, priorities, rules, env_snapshot, robot_state, models):
         },
     }
 
-    # L1
+    # L1 — Will
     will = transitions.L1_will(mission)
 
-    # L2
+    # L2 — Wisdom
     wisdom = transitions.L2_wisdom(priorities, rules)
 
-    # L3
+    # L3 — Knowledge
     knowledge = transitions.L3_knowledge(env_snapshot, robot_state, models)
 
-    # L4
+    # L4 — Comprehension (integration point)
     comp = transitions.L4_comprehension(wisdom, knowledge)
+
     context = ContextFrame(
         goal=mission["target"],
         safety_envelope=True,
@@ -45,31 +46,53 @@ def run_cycle(mission, priorities, rules, env_snapshot, robot_state, models):
         uncertainty=env_snapshot.unknown_regions
     )
 
-    # L5
-    branches = transitions.L5_branching(context)
+    # -------------------------
+    # PROJECTIVE PAIR (L5–L6)
+    # -------------------------
+
+    # L5 — Projective Freedom (semantic branching)
+    branches = transitions.L5_projective_freedom(context)
     trace.branches = branches
 
-    # L6
-    branches = transitions.L6_evaluation(branches, context)
+    # L6 — Projective Constraint (conceptual filtering)
+    branches = transitions.L6_projective_constraint(branches, context)
 
-    # L7
-    branches = transitions.L7_constraints(branches, context)
+    # L7 — Balance (stabilize L5–L6)
+    branches = transitions.L7_balance(branches, context)
 
-    # Check rollback condition: all hard constraints failed
-    if all(b.constraint_result is False for b in branches):
-        context = rollback.rollback_to_L4(context, trace)
-        # В демо: после rollback просто возвращаем "нет действия"
-        return {"move_to": None, "reason": "rollback_no_feasible"}, trace
+    # -------------------------
+    # PRACTICAL PAIR (L8–L9)
+    # -------------------------
 
-    # L9
-    branches = transitions.L9_feasibility(branches, context)
+    # L8 — Practical Freedom (actionable options)
+    branches = transitions.L8_practical_freedom(branches, context)
+
+    # L9 — Practical Constraint (feasibility)
+    branches = transitions.L9_practical_constraint(branches, context)
     trace.feasible = branches
 
-    # L10
-    selected = transitions.L10_selection(branches, context)
-    trace.selected = selected
+    # L7 — Balance again (stabilize L8–L9)
+    branches = transitions.L7_balance(branches, context)
 
-    # L11
-    action = transitions.L11_execution(selected, trace)
+    # -------------------------
+    # ROLLBACK OPERATOR
+    # -------------------------
+
+    # If invariants fail → rollback to L1–L4
+    if all(b.constraint_result is False for b in branches):
+        context = rollback.invoke(context, trace)
+        return {"move_to": None, "reason": "rollback_no_feasible"}, trace
+
+    # -------------------------
+    # FINALIZATION
+    # -------------------------
+
+    # L10 — Foundation (structural grounding)
+    foundation = transitions.L10_foundation(branches, context)
+
+    # L11 — Realization (final output)
+    action = transitions.L11_realization(foundation, trace)
+    trace.selected = foundation
+    trace.action = action
 
     return action, trace
