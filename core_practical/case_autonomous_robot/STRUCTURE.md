@@ -12,7 +12,7 @@ Autonomous Robot Route Selection in a Partially Unknown Environment
 Demonstrate how A11 prevents structural collapse in a complex reasoning pipeline under conflicting goals and constraints.
 
 **Primary focus:**  
-- Semantic branching  
+- Projective branching  
 - Constraint enforcement  
 - Rollback  
 - Deterministic reasoning trace  
@@ -82,77 +82,69 @@ Demonstrate how A11 prevents structural collapse in a complex reasoning pipeline
 
 ### 2.4 L4 — Comprehension (Integration)
 - Integrate L2 (priorities) + L3 (state/models)  
-- Detect conflicts (e.g., shortest path crosses unsafe zone)  
+- Detect conflicts  
 - Build context frame for the decision cycle  
 
 ---
 
 ## 3. Operational Cycle (L5–L11) — Flow Skeleton
 
-### 3.1 L5 — Semantic Branching
-Define branches, for example:
-- Branch A: shortest path to target  
-- Branch B: safest path (max safety margin)  
+### 3.1 L5 — Projective Freedom
+Generate conceptual route branches:
+- Branch A: shortest path  
+- Branch B: safest path  
 - Branch C: energy‑optimal path  
-- Branch D: exploration‑biased path (optional)  
+- Branch D: exploration‑biased path  
 
-**Output:** set of candidate routes with semantic labels.
+**Output:** conceptual candidates.
 
-### 3.2 L6 — Evaluation
-For each branch:
-- Compute:
-  - path length  
-  - risk score  
-  - energy cost  
-  - proximity to humans  
+### 3.2 L6 — Projective Constraint
+Filter conceptual branches based on:
+- safety envelope  
+- energy envelope  
+- uncertainty conditions  
 
-**Output:** scored candidates.
+**Output:** conceptually valid branches.
 
-### 3.3 L7 — Constraint Gate
-Apply constraints:
-- Hard constraints:
-  - no entry into human safety zones  
-  - energy cost ≤ remaining energy  
-- Soft constraints:
-  - prefer lower risk  
-  - prefer shorter path  
+### 3.3 L7 — Balance
+Stabilize the projective pair (L5–L6).  
+Resolve contradictions, ensure coherence.
 
-**Output:**  
-- allowed candidates  
-- rejected candidates (with reasons)
+### 3.4 L8 — Practical Freedom
+Expand conceptual branches into actionable variants:
+- MOVE  
+- WAIT  
 
-### 3.4 L8 — Rollback (if needed)
-Trigger rollback if:
-- all candidates violate constraints  
-- evaluation is inconsistent  
-- context is incomplete  
+**Output:** actionable candidates.
 
-Rollback target:
-- return to L4 (Comprehension)  
-- possibly adjust:
-  - priorities  
-  - context frame  
-  - exploration vs safety balance  
+### 3.5 L9 — Practical Constraint
+Filter actionable candidates by:
+- energy feasibility  
+- risk feasibility  
+- unknown exposure limits  
 
-### 3.5 L9 — Feasibility Check
-Ensure remaining candidates are:
-- executable by the robot  
-- consistent with environment model  
-- not dependent on unknown data only  
+**Output:** feasible actions.
 
-### 3.6 L10 — Action Selection
-Deterministic selection rule, e.g.:
-- choose candidate with:
-  - minimal risk  
-  - then minimal energy  
-  - then minimal distance  
+### 3.6 L7 — Balance (second pass)
+Stabilize the practical pair (L8–L9).
 
-No randomness allowed.
+### 3.7 L10 — Foundation
+Provide structural justification:
+- distance  
+- risk  
+- energy  
+- uncertainty exposure  
 
-### 3.7 L11 — Execution
-- Output selected move / route segment  
-- Send command to control layer  
-- Store reasoning trace for this cycle  
+### 3.8 L11 — Realization
+Deterministic selection rule:
+1. minimal risk  
+2. then minimal energy  
+3. then minimal distance  
+
+Output:
+- next move  
+- justification  
+- reasoning trace  
 
 ---
 
@@ -167,31 +159,28 @@ For each decision cycle, store:
   - mission goal  
   - context frame  
 
-- **Branches (L5):**
-  - list of candidates  
+- **L5 — Projective Freedom:**
+  - conceptual branches  
   - semantic label per branch  
 
-- **Evaluation (L6):**
-  - scores per branch (risk, energy, distance, etc.)  
+- **L6 — Projective Constraint:**
+  - constraints applied per branch  
 
-- **Constraints (L7):**
-  - pass/fail per branch  
-  - reasons for rejection  
+- **L7 — Balance:**
+  - stabilization operations  
 
-- **Rollback (L8):**
-  - whether triggered  
-  - cause  
-  - restored state / updated context  
+- **L8 — Practical Freedom:**
+  - actionable expansions  
 
-- **Feasibility (L9):**
-  - final candidate set  
+- **L9 — Practical Constraint:**
+  - feasibility filtering  
 
-- **Decision (L10):**
-  - chosen branch  
-  - deterministic rule applied  
+- **L10 — Foundation:**
+  - evaluation metrics (risk, energy, distance, uncertainty)  
 
-- **Execution (L11):**
-  - action sent  
+- **L11 — Realization:**
+  - final action  
+  - justification  
   - timestamp / cycle ID  
 
 ---
@@ -206,11 +195,11 @@ Explicitly mark in the case text:
 - **Single integration point:**  
   - L4 as only integration node  
 
-- **Semantic branching:**  
+- **Projective branching:**  
   - explicit branches at L5  
 
-- **Constraint gates:**  
-  - explicit checks at L7  
+- **Constraint enforcement:**  
+  - explicit checks at L6 and L9  
 
 - **Rollback:**  
   - at least one scenario where rollback is triggered  
@@ -226,20 +215,20 @@ Explicitly mark in the case text:
 ## 6. Example Scenarios to Include
 
 - **Scenario 1:**  
-  Shortest path crosses human safety zone → rejected at L7 → safer path chosen.
+  Shortest path crosses human safety zone → removed at L6/L9 → safer path chosen.
 
 - **Scenario 2:**  
-  All paths exceed energy budget → rollback at L8 → updated mission or fallback behavior.
+  All paths exceed energy budget → rollback → updated mission or fallback behavior.
 
 - **Scenario 3:**  
-  Unknown region vs known safe detour → branching at L5, evaluation at L6, constraints at L7.
+  Unknown region vs known safe detour → branching at L5, constraints at L6/L9.
 
 Each scenario must show:
-- branching,  
-- constraints,  
-- possible rollback,  
-- final deterministic decision,  
-- full reasoning trace.
+- branching  
+- constraints  
+- possible rollback  
+- final deterministic decision  
+- full reasoning trace  
 
 ---
 
