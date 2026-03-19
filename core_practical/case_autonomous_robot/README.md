@@ -1,13 +1,13 @@
 # A11 Practical Case — Autonomous Robot Decision Control  
-## Demonstration of A11 L1–L11 Reasoning in a Partially Unknown Environment
+Demonstration of A11 L1–L11 Reasoning in a Partially Unknown Environment
 
-This directory contains a complete demonstration case showing how Algorithm 11 (A11) performs deterministic, interpretable decision‑making for an autonomous robot navigating a partially unknown environment under safety and energy constraints.
+This directory contains a complete demonstration case showing how **Algorithm 11 (A11)** performs deterministic, interpretable decision‑making for an autonomous robot navigating a partially unknown environment under safety and energy constraints.
 
 The case is fully aligned with:
 
-- **A11 Architectural Invariants**  
-- **A11 Structural Architecture Specification**  
-- **A11 System Integration Guide**
+- A11 Architectural Invariants  
+- A11 Structural Architecture Specification  
+- A11 System Integration Guide  
 
 It is intended for engineers who want to understand how A11 behaves in a real scenario.
 
@@ -15,17 +15,17 @@ It is intended for engineers who want to understand how A11 behaves in a real sc
 
 ## 1. Purpose of This Case
 
-This case demonstrates:
+This case demonstrates the full A11 reasoning cycle:
 
-- semantic branching (L5)  
-- evaluation of candidate branches (L6)  
-- hard/soft constraint gates (L7)  
-- rollback mechanism (L8)  
-- feasibility filtering (L9)  
-- deterministic action selection (L10)  
-- execution with reasoning trace (L11)  
+- **Projective Freedom (L5)** — generation of conceptual route branches  
+- **Projective Constraint (L6)** — conceptual filtering based on safety and energy envelopes  
+- **Balance (L7)** — stabilization of the projective and practical pairs  
+- **Practical Freedom (L8)** — expansion of conceptual branches into actionable variants  
+- **Practical Constraint (L9)** — feasibility filtering of actionable candidates  
+- **Foundation (L10)** — structural justification for the selected action  
+- **Realization (L11)** — deterministic action execution with full reasoning trace  
 
-It provides a **complete, reproducible example** of a full A11 reasoning cycle.
+The case provides a complete, reproducible example of a full A11 reasoning cycle.
 
 ---
 
@@ -33,20 +33,24 @@ It provides a **complete, reproducible example** of a full A11 reasoning cycle.
 
 ```
 case_autonomous_robot/
-README.md               ← this file
-STRUCTURE.md            ← architectural skeleton of the case
-CASE.md                 ← full scenario description
-TRACE_EXAMPLE.md        ← complete reasoning trace (L1–L11)
-/diagrams               ← flow, branching, rollback diagrams
-/python_reference       ← minimal reference implementation
-```
-case_autonomous_robot/
-README.md               ← this file
-STRUCTURE.md            ← architectural skeleton of the case
-CASE.md                 ← full scenario description
-TRACE_EXAMPLE.md        ← complete reasoning trace (L1–L11)
-/diagrams               ← flow, branching, rollback diagrams
-/python_reference       ← minimal reference implementation
+│
+├── README.md               ← this file
+├── STRUCTURE.md            ← architectural skeleton of the case
+├── CASE.md                 ← full scenario description
+├── TRACE_EXAMPLE.md        ← complete reasoning trace (L1–L11)
+│
+├── diagrams/               ← flow, branching, rollback diagrams
+│   ├── branching.md
+│   ├── flow.md
+│   └── rollback.md
+│
+└── python_reference/       ← minimal reference implementation
+├── a11_state.py
+├── constraints.py
+├── cycle.py
+├── transitions.py
+├── rollback.py
+└── example_run.py
 ```
 
 ---
@@ -72,8 +76,8 @@ The main document describing:
 - mission  
 - constraints  
 - full L1–L11 execution  
-- evaluation tables  
-- constraint gates  
+- projective and practical filtering  
+- balance operations  
 - rollback conditions  
 - deterministic selection logic  
 
@@ -85,13 +89,13 @@ This is the primary reference for understanding the scenario.
 A complete reasoning trace for one A11 cycle, including:
 
 - raw inputs  
-- semantic branches  
-- evaluation metrics  
-- constraint results  
-- rollback markers  
-- feasibility filtering  
-- selected branch  
-- final action  
+- projective branches (L5)  
+- projective constraints (L6)  
+- balance operations (L7)  
+- practical expansions (L8)  
+- practical constraints (L9)  
+- foundation metrics (L10)  
+- final realization (L11)  
 
 This file shows how A11 behaves step‑by‑step.
 
@@ -102,7 +106,7 @@ This file shows how A11 behaves step‑by‑step.
 The `/diagrams/` directory contains ASCII diagrams illustrating:
 
 - **Flow Diagram** — full L1–L11 pipeline  
-- **Branching Diagram** — semantic branching at L5  
+- **Projective Branching Diagram** — conceptual branching at L5  
 - **Rollback Diagram** — rollback path from L7 to L4  
 
 These diagrams help engineers visualize the architecture.
@@ -115,8 +119,8 @@ The `/python_reference/` directory contains a minimal, deterministic implementat
 
 - state structures  
 - level transitions (L1–L11)  
-- constraints  
-- rollback  
+- projective and practical constraints  
+- rollback logic  
 - full cycle execution  
 - example run script  
 
@@ -142,10 +146,10 @@ python3 example_run.py
 The script will:
 
 - execute one A11 cycle  
-- print the selected branch  
-- print evaluation metrics  
+- print projective and practical filtering  
+- print balance operations  
 - print rollback info (if triggered)  
-- print the final action  
+- print the final realized action  
 
 ---
 
@@ -158,9 +162,12 @@ All authoritative definitions remain in:
 
 ```
 /core/
-ARCHITECTURE.md
-INVARIANTS.md
-SYSTEM_INTEGRATION_GUIDE.md
+A11 — Structural Architecture Specification.pdf
+A11 — Cognitive Architecture Specification.pdf
+A11 — Decision Layer Specification.pdf
+A11 — Language Specification.pdf
+A11 — System Integration Guide.pdf
+A11 — Architectural Invariants.pdf
 ```
 
 ---
@@ -177,4 +184,3 @@ Engineers may extend this case by adding:
 - human‑robot interaction layers  
 
 All extensions must remain compliant with A11 invariants.
-
