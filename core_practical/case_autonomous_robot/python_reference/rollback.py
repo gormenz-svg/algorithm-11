@@ -1,12 +1,24 @@
-# A11 Reference Implementation — Rollback Logic
-# Version 1.0
+# A11 Reference Implementation — Rollback Operator
+# Version 2.0 (A11-Agent Compatible, L-marking preserved)
 
-def rollback_to_L4(context, trace):
+def rollback_operator(context, trace):
     """
-    Rollback must:
-    - mark that rollback was triggered
-    - in real system: adjust context/priorities/envelopes
-    In this demo we only mark it in the trace.
+    A11 Rollback Operator
+
+    In A11:
+    - Rollback is NOT a level (not L8)
+    - It is invoked when invariants fail in L5–L11
+    - It returns execution to the stable Core Layer (L1–L4)
+    - It restores or resets the context frame
+
+    In this demonstration:
+    - We only mark that rollback occurred
+    - Context is returned unchanged for simplicity
     """
-    trace.rollback_info = "rollback_triggered"
+
+    trace.rollback_info = {
+        "status": "rollback_triggered",
+        "returned_to": "L1-L4_core_layer"
+    }
+
     return context
