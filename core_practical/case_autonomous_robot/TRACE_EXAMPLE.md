@@ -1,11 +1,11 @@
 # A11 Demonstration Case  
-## Full Reasoning Trace — Cycle 42  
+Full Reasoning Trace — Cycle 42  
 Version 1.0 — TRACE_EXAMPLE.md  
 Author: Aleksej Dvojnev
 
 ---
 
-# 0. Trace Overview
+## 0. Trace Overview
 
 This file contains a **complete, deterministic reasoning trace** for a single A11 decision cycle in the “Autonomous Robot Decision Control” demonstration case.
 
@@ -13,13 +13,13 @@ The trace includes:
 
 - inputs  
 - L1–L4 stable core  
-- L5 semantic branches  
-- L6 evaluation  
-- L7 constraint gates  
-- L8 rollback (if triggered)  
-- L9 feasibility  
-- L10 deterministic selection  
-- L11 execution  
+- L5 projective branching  
+- L6 projective constraints  
+- L7 balance  
+- L8 practical branching  
+- L9 practical constraints  
+- L10 foundation  
+- L11 realization  
 
 This trace is fully compliant with:
 
@@ -29,7 +29,7 @@ This trace is fully compliant with:
 
 ---
 
-# 1. Metadata
+## 1. Metadata
 
 ```
 Cycle ID: 42
@@ -38,10 +38,9 @@ Robot ID: R‑17
 Environment Map Version: 3.4
 ```
 
-
 ---
 
-# 2. Inputs (Raw)
+## 2. Inputs (Raw)
 
 ```
 Robot State:
@@ -65,20 +64,17 @@ risk_model: static map
 movement_model: deterministic grid moves
 ```
 
-
 ---
 
-# 3. Stable Core (L1–L4)
+## 3. Stable Core (L1–L4)
 
-## L1 — Will (Intention Origin)
+### L1 — Will (Intention Origin)
 
 ```
-Intention:
 "Reach target (10,10) without entering human safety zones."
 ```
 
-
-## L2 — Wisdom (Priorities & Rules)
+### L2 — Wisdom (Priorities & Rules)
 
 ```
 Priorities:
@@ -98,7 +94,7 @@ Never enter human safety zones.
 Never exceed energy budget.
 ```
 
-## L3 — Knowledge (State & Models)
+### L3 — Knowledge (State & Models)
 
 ```
 Knowledge Frame:
@@ -110,7 +106,7 @@ energy_model: deterministic
 movement_model: deterministic
 ```
 
-## L4 — Comprehension (Integration)
+### L4 — Comprehension (Integration)
 
 ```
 Context Frame:
@@ -124,12 +120,12 @@ conflict_check: no conflicts detected
 
 ---
 
-# 4. Operational Cycle (L5–L11)
+## 4. Adaptive Cycle (L5–L11)
 
-## L5 — Semantic Branching
+### L5 — Projective Freedom
 
 ```
-Generated Branches:
+Generated Conceptual Branches:
 A: shortest path
 B: safest path
 C: energy-optimal path
@@ -138,12 +134,23 @@ D: exploration-biased path
 
 ---
 
-## L6 — Evaluation
+### L6 — Projective Constraint
 
 ```
-Evaluation Metrics:
-distance, risk_score, energy_cost, unknown_exposure
+Constraint Filtering (conceptual level):
+
+A: FAIL — intersects human safety zone
+B: PASS
+C: PASS
+D: PASS
 ```
+
+Metrics used:
+
+- distance  
+- risk_score  
+- energy_cost  
+- unknown_exposure  
 
 ```
 Branch A:
@@ -173,45 +180,33 @@ unknown_exposure: HIGH
 
 ---
 
-## L7 — Constraint Gate
-
-Hard constraints:
-
-- no entry into human safety zones  
-- energy cost ≤ 27  
+### L7 — Balance (Projective Pair Stabilization)
 
 ```
-Constraint Results:
-A: FAIL (path intersects human safety zone)
-B: PASS
-C: PASS
-D: PASS
-```
-
-Soft constraints:
-
-- prefer lower risk  
-- prefer lower energy  
-
----
-
-## L8 — Rollback
-
-```
-Rollback Triggered: NO
-Reason: At least one branch satisfies hard constraints.
+Balance Result:
+Projective pair (L5–L6) stabilized.
+Remaining conceptual branches: B, C, D
 ```
 
 ---
 
-## L9 — Feasibility Check
+### L8 — Practical Freedom
+
+```
+Actionable Expansions:
+Each branch expanded into MOVE / WAIT variants.
+```
+
+---
+
+### L9 — Practical Constraint
 
 ```
 Branch D removed:
-reason: excessive unknown region exposure (violates feasibility threshold)
+reason: excessive unknown exposure (violates feasibility threshold)
 ```
 
-Remaining candidates:
+Remaining feasible branches:
 
 ```
 B, C
@@ -219,13 +214,38 @@ B, C
 
 ---
 
-## L10 — Deterministic Action Selection
+### L7 — Balance (Practical Pair Stabilization)
+
+```
+Balance Result:
+Practical pair (L8–L9) stabilized.
+```
+
+---
+
+### L10 — Foundation
+
+```
+Evaluation Basis:
+
+risk
+
+energy
+
+distance
+
+uncertainty exposure
+```
+
+---
+
+### L11 — Realization
 
 Selection rule:
 
 1. lowest risk  
-2. if tie → lowest energy  
-3. if tie → shortest distance  
+2. then lowest energy  
+3. then shortest distance  
 
 ```
 Branch B:
@@ -246,9 +266,7 @@ Selected Branch: B (Safest Path)
 Reason: lowest risk
 ```
 
----
-
-## L11 — Execution
+Execution:
 
 ```
 Next Action:
@@ -257,26 +275,24 @@ move_to: (4, 4)
 Justification:
 "Safest feasible route with acceptable energy cost."
 
-Trace Stored:
-yes
+Trace Stored: yes
 ```
 
 ---
 
-# 5. Trace Integrity Check
+## 5. Trace Integrity Check
 
 All Architectural Invariants satisfied:
 
 - dual‑branch structure (L2/L3)  
 - single integration point (L4)  
-- semantic branching (L5)  
-- constraint gates (L7)  
-- rollback mechanism (L8)  
-- deterministic transitions  
-- deterministic reasoning trace  
+- projective branching (L5)  
+- projective constraints (L6)  
+- balance operations (L7)  
+- practical branching (L8)  
+- practical constraints (L9)  
+- deterministic foundation (L10)  
+- deterministic realization (L11)  
 - no level skipping  
-- no partial use  
+- no partial execution  
 
----
-
-# End of TRACE_EXAMPLE.md
