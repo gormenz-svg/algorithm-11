@@ -1,66 +1,66 @@
-## FLOW DIAGRAM (L1–L11)
-The full A11 stream as an engineering ASCII diagram
+## FLOW DIAGRAM (S1–S11)
+Canonical A11-Agent execution flow (Core + Adaptive Layer)
 
-```
                      ┌──────────────────────────┐
-                     │          L1 — WILL        │
-                     │   Human intention origin   │
-                     └───────────────┬───────────┘
+                     │        S1 — WILL         │
+                     │   Human intention origin  │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │       L2 — WISDOM          │
-                     │  Priorities & hard rules   │
-                     └───────────────┬───────────┘
+                     ┌───────────────▼──────────┐
+                     │       S2 — WISDOM         │
+                     │  Priorities & constraints │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │      L3 — KNOWLEDGE        │
-                     │  State, models, perception │
-                     └───────────────┬───────────┘
+                     ┌───────────────▼──────────┐
+                     │     S3 — KNOWLEDGE        │
+                     │  Facts, models, methods   │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │   L4 — COMPREHENSION       │
-                     │  Single integration point  │
-                     └───────────────┬───────────┘
+                     ┌───────────────▼──────────┐
+                     │   S4 — COMPREHENSION      │
+                     │ Integration of S2 & S3    │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │   L5 — SEMANTIC BRANCHING  │
-                     │  A, B, C, D candidate paths│
-                     └───────────────┬───────────┘
+                                     ▼
+                     ┌──────────────────────────┐
+                     │ S5 — PROJECTIVE FREEDOM   │
+                     │ Generate semantic options │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │      L6 — EVALUATION       │
-                     │ scoring: risk, energy, etc │
-                     └───────────────┬───────────┘
+                     ┌───────────────▼──────────┐
+                     │ S6 — PROJECTIVE CONSTRAINT│
+                     │ Filter conceptual options │
+                     └───────────────┬──────────┘
                                      │
-                     ┌───────────────▼───────────┐
-                     │   L7 — CONSTRAINT GATE     │
-                     │  hard/soft constraints     │
-                     └───────────────┬───────────┘
+                     ┌───────────────▼──────────┐
+                     │      S7 — BALANCE         │
+                     │ Stabilize S5–S6 pair      │
+                     └───────────────┬──────────┘
                                      │
-                     │───────────────┘
-                     │   if all fail → rollback
-                     ▼
-         ┌──────────────────────────┐
-         │       L8 — ROLLBACK      │
-         │ return to L4, rebuild    │
-         └───────────────┬─────────┘
-                         │
-                         ▼
-                     (back to L4)
+                     ┌───────────────▼──────────┐
+                     │  S8 — PRACTICAL FREEDOM   │
+                     │ Generate actionable steps │
+                     └───────────────┬──────────┘
+                                     │
+                     ┌───────────────▼──────────┐
+                     │ S9 — PRACTICAL CONSTRAINT │
+                     │ Feasibility & limitations │
+                     └───────────────┬──────────┘
+                                     │
+                     ┌───────────────▼──────────┐
+                     │      S7 — BALANCE         │
+                     │ Stabilize S8–S9 pair      │
+                     └───────────────┬──────────┘
+                                     │
+                     ┌───────────────▼──────────┐
+                     │     S10 — FOUNDATION      │
+                     │ Logical & structural base │
+                     └───────────────┬──────────┘
+                                     │
+                     ┌───────────────▼──────────┐
+                     │    S11 — REALIZATION      │
+                     │ Final output + alignment  │
+                     └───────────────────────────┘
 
-                                     │
-                     ┌───────────────▼───────────┐
-                     │    L9 — FEASIBILITY        │
-                     │ remove non-executable opts │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │   L10 — ACTION SELECTION   │
-                     │ deterministic choice rule  │
-                     └───────────────┬───────────┘
-                                     │
-                     ┌───────────────▼───────────┐
-                     │     L11 — EXECUTION        │
-                     │  output + reasoning trace  │
-                     └────────────────────────────┘
-```
+Rollback Operator (not a level):
+If invariants fail at any point S5–S11 → return to S1–S4.
