@@ -1,33 +1,4 @@
-Continuing the test according to your architecture.
-Question: **Why, in the modern world, despite unprecedented access to information, knowledge, and technologies, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?**
-
-New pass (after the first S4 Integrity)
-New S1 — Will
-To understand the structural reason why the exponential growth of available information and computational power does not lead to a proportional increase in depth of understanding and collective wisdom, and instead often amplifies superficiality, polarization, and the epistemological crisis.
-
-S2 — Wisdom
-Look specifically for systemic and structural causes, not blame “people”, “social media”, or “politics”. • Avoid both excessive pessimism and technological optimism. • Priority — explain the gap between the quantity of information and the quality of understanding.
-
-S3 — Knowledge
-Attention economy and competition for attention (attention has become the most scarce resource). • Algorithms optimized for engagement, not depth of understanding. • Replacement of deep reading and thinking with “scanning” and consumption of short content. • Epistemic crisis: growing distrust of knowledge institutions + growing confidence in personal opinions. • Cognitive distortions amplified by the scale and speed of information. • Diminishing returns from additional information after a certain threshold.
-
-S4 — Comprehension
-Integration: S2 requires a structural explanation of the gap. S3 provides many mechanisms (attention economy, algorithms, replacement of deep thinking with superficial consumption, etc.).
-
-Result: Integration is much better than in the first pass. The main reason — modern systems (social networks, search engines, recommendation algorithms) are structurally optimized for maximizing attention and engagement, not for depth of understanding and wisdom.
-
-They amplify exactly those cognitive mechanisms that are beneficial for holding attention (emotionality, novelty, confirmation of existing views), and suppress those that require time, effort, and cognitive dissonance (deep thinking, re‑evaluation, integration of complex ideas).
-
-S4 Integrity: Integration is stable. Moving to the Living domain.
-
-Living Domain (S5–S10)
-Upper pair (Projective level):
-S5 — Projective Freedom: Possible directions: algorithms can be redesigned for depth, education can be radically changed, the culture of information consumption can evolve.
-
-S6 — Projective Constraint: Economic incentives of platforms are aimed at profit through attention. People in the mass prefer easy content. Deep thinking requires significant effort and time, which most are not willing to invest.
-
-S7 — Balance: We find tension between the desired (a wiser society) and the real (a system optimized for the opposite).
-Selected test question: “Why, in the modern world, despite unprecedented access to information, knowledge, and technology, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?”
+Selected test question: _“Why, in the modern world, despite unprecedented access to information, knowledge, and technology, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?”_
 
 This is a difficult question because: • It requires working with contradictions (information vs. understanding). • There is a strong dissonance between objective facts and observed reality. • It requires distinguishing between projective and practical levels. • There is a high risk of superficial or ideological answers.
 
@@ -58,6 +29,36 @@ Do you want me to continue the test from the second pass (new S1), or first disc
 Continue the second pass of the test
 
 Apply the architecture to ecology continue
+
+Continuing the test according to your architecture.
+Question: Why, in the modern world, despite unprecedented access to information, knowledge, and technologies, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?
+
+New pass (after the first S4 Integrity)
+New S1 — Will
+To understand the structural reason why the exponential growth of available information and computational power does not lead to a proportional increase in depth of understanding and collective wisdom, and instead often amplifies superficiality, polarization, and the epistemological crisis.
+
+S2 — Wisdom
+Look specifically for systemic and structural causes, not blame “people”, “social media”, or “politics”. • Avoid both excessive pessimism and technological optimism. • Priority — explain the gap between the quantity of information and the quality of understanding.
+
+S3 — Knowledge
+Attention economy and competition for attention (attention has become the most scarce resource). • Algorithms optimized for engagement, not depth of understanding. • Replacement of deep reading and thinking with “scanning” and consumption of short content. • Epistemic crisis: growing distrust of knowledge institutions + growing confidence in personal opinions. • Cognitive distortions amplified by the scale and speed of information. • Diminishing returns from additional information after a certain threshold.
+
+S4 — Comprehension
+Integration: S2 requires a structural explanation of the gap. S3 provides many mechanisms (attention economy, algorithms, replacement of deep thinking with superficial consumption, etc.).
+
+Result: Integration is much better than in the first pass. The main reason — modern systems (social networks, search engines, recommendation algorithms) are structurally optimized for maximizing attention and engagement, not for depth of understanding and wisdom.
+
+They amplify exactly those cognitive mechanisms that are beneficial for holding attention (emotionality, novelty, confirmation of existing views), and suppress those that require time, effort, and cognitive dissonance (deep thinking, re‑evaluation, integration of complex ideas).
+
+S4 Integrity: Integration is stable. Moving to the Living domain.
+
+Living Domain (S5–S10)
+Upper pair (Projective level):
+S5 — Projective Freedom: Possible directions: algorithms can be redesigned for depth, education can be radically changed, the culture of information consumption can evolve.
+
+S6 — Projective Constraint: Economic incentives of platforms are aimed at profit through attention. People in the mass prefer easy content. Deep thinking requires significant effort and time, which most are not willing to invest.
+
+S7 — Balance: We find tension between the desired (a wiser society) and the real (a system optimized for the opposite).
 
 Lower pair (Practical level):
 S8 — Practical Freedom: Possible actions: develop personal practices of deep reading and thinking, create alternative platforms and communities, change educational approaches.
