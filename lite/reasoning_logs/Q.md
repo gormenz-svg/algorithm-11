@@ -1,5 +1,5 @@
 Continuing the test according to your architecture.
-Question: Why, in the modern world, despite unprecedented access to information, knowledge, and technologies, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?
+Question: **Why, in the modern world, despite unprecedented access to information, knowledge, and technologies, does the level of deep understanding and wisdom among people on average not increase, and in many aspects even decline?**
 
 New pass (after the first S4 Integrity)
 New S1 — Will
