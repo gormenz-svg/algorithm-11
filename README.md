@@ -100,3 +100,5 @@ MIT License | Commercial License (Enterprise Support)
 
 ## 📈 Version  
 v1.0.0 (Stable)
+
+---
