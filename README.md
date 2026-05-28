@@ -1,127 +1,14 @@
-🔖 Version: v1.0.0 (Stable)
-
-# Algorithm 11 (A11) — Universal Decision‑Making Architecture
-
-### 🚨 Problem
-
-Modern AI systems — including LLMs and autonomous agents — suffer from several critical limitations:
-
-- **Unstable reasoning** (contradictions, hallucinations, incoherent chains of thought)  
-- **Lack of interpretability** (no transparent decision logic)  
-- **Non‑deterministic behavior** (same input → different output)  
-- **No universal decision layer** across robotics, autonomy, and hybrid human–AI systems  
-- **Difficult integration** into real engineering stacks  
-- **No standard for structured reasoning**
-
-These issues prevent AI from being reliable in high‑stakes environments such as robotics, aerospace, autonomous vehicles, and complex human–AI collaboration.
+# 🧠 Algorithm 11 (A11) — Universal Reasoning Framework  
+A structured decision architecture for stable, interpretable, and deterministic AI reasoning.
 
 ---
 
-### ✅ Solution: Algorithm 11 (A11)
+## 🔹 A11 for LLMs and Cognitive Systems  
+A11 provides stable reasoning and prevents context drift in large language models.  
+It defines a universal thinking structure based on 11 levels — from intention (Will) to realization (Realization).
 
-**A11 is a universal, interpretable, deterministic decision‑making architecture** designed to solve these problems at two distinct layers:
 
-1. **A11 Core Standard** — an engineering architecture for autonomous systems, robotics, and hybrid reasoning.  
-2. **A11‑Lite (Prompt Layer)** — a human‑facing interface that stabilizes AI reasoning in chat environments.
-
-These layers are connected but serve different audiences.
-
-**Core = for engineers and researchers.**  
-**Lite = for advanced AI users and structured reasoning.**
-
----
-
-### Technical Overview
-
-**Architecture Type:**  
-Universal decision-making and reasoning architecture for autonomous systems and hybrid human–AI workflows.
-
-**Core Structure (L1–L4):**  
-Human intention (Will), human judgment (Wisdom), AI knowledge base, and integration layer (Comprehension).
-
-**Operational Cycle (L5–L11):**  
-Deterministic reasoning pipeline with freedom/constraint pairs, balance operator, and final realization loop.
-
-**Key Properties:**  
-Deterministic transitions, interpretable structure, hallucination resistance, fractal recursion, and traceable decision paths.
-
-**Integration Domains:**  
-Autonomous robotics, multi-agent systems, aerospace, LLM agents, safety‑critical pipelines, structured reasoning systems.
-
----
-
-## 1. A11 — Core Standard (Engineering Layer)
-
-The **A11 Core Standard** defines a domain‑agnostic decision layer that can be integrated into any autonomous system.  
-It provides:
-
-- a cognitive architecture  
-- a deterministic decision cycle  
-- a universal communication language  
-- integration requirements  
-- applied engineering models  
-
-A11 Core is intended for:
-
-- system architects  
-- autonomy engineers  
-- AI researchers  
-- robotics developers  
-- designers of reasoning systems  
-
----
-
-### Core Documents
-
-#### **A11 — Overview**  
-DOI: https://doi.org/10.5281/zenodo.18594315  
-PDF: `/core/A11 — Overview (v1.0).pdf`
-
-#### **A11 — Cognitive Architecture Specification**  
-DOI: https://doi.org/10.5281/zenodo.18536520  
-PDF: `/core/A11 — Cognitive Architecture Specification (v1.0).pdf`
-
-#### **A11 — Decision Layer Specification**  
-DOI: https://doi.org/10.5281/zenodo.18593251  
-PDF: `/core/A11 — Decision Layer Specification (v1.0).pdf`
-
-#### **A11 — Language Specification**  
-DOI: https://doi.org/10.5281/zenodo.18540045  
-PDF: `/core/A11 — Language Specification (v1.0).pdf`
-
-#### **A11 — System Integration Guide**  
-DOI: https://doi.org/10.5281/zenodo.18647305  
-PDF: `/core/A11 — System Integration Guide (v1.0).pdf`
-
-#### **A11 — Structural Architecture Specification**  
-DOI: https://doi.org/10.5281/zenodo.18622044  
-PDF: `/core/A11 — Structural Architecture Specification.pdf`
-
----
-
-### Applied Models (Engineering Demonstrations)
-
-These documents demonstrate how A11 can be applied to real engineering domains through modeled scenarios and decision‑making frameworks:
-
-#### **A11 for Autonomous Vehicles — Conflict Resolution Model**  
-DOI: https://doi.org/10.5281/zenodo.18542117  
-PDF: `/applied/A11 for Autonomous Vehicles.pdf`
-
-#### **A11 for Multi‑Agent Robotics — Coordination Framework**  
-DOI: https://doi.org/10.5281/zenodo.18543996  
-PDF: `/applied/A11 for Multi-Agent Robotics.pdf`
-
-#### **A11 for Off‑Earth Construction — Autonomous Base Building**  
-DOI: https://doi.org/10.5281/zenodo.18545674  
-PDF: `/applied/A11 for Off-Earth Construction.pdf`
-
----
-
-## 2. A11‑Lite — Prompt Layer (Human‑Facing Interface)
-
-A11‑Lite is a simplified layer designed for chat environments, accessible to anyone without technical expertise. It addresses the practical problem of unstable, contradictory, or drifting LLM output by applying the principles of Algorithm 11 in a human‑friendly form. A11‑Lite makes interaction with AI more structured, predictable, and stable.
-
-### Quick Start Prompt
+### Quick Start
 Copy and paste the following into ChatGPT, Claude, Gemini, Grok, or similar chat models:
 
 ```
@@ -170,152 +57,46 @@ Confirm that you understand and are ready to structure your reasoning through A1
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
 
-After inserting the prompt, activate A11‑Lite with any of the following commands:
-
-- “Apply A11 fully.”
-- “Go through all A11 levels from L1 to L11.”
-- “Use the complete A11 process.”
-
-#### Important Usage Notes
-Modern chat models tend to “forget” context after 20–30 messages. If the output quality begins to degrade, simply re‑insert the A11‑Lite prompt and activate it again.
-
-A11 is not a style of answering — it is a **structured reasoning architecture**.  
-If the model does not execute all levels fully and in order, the result is **not considered A11**.
-
----
-
-### A11‑Lite Documentation
-
-- `lite/ALGORITHM_11.md` — full description  
-- `lite/QUICK_START.md` — how to use A11 in chat  
-- `lite/APPLICATIONS.md` — practical use cases  
-- `lite/EPISTEMOLOGY.md` — super‑hallucination risk  
-- `lite/COSMOLOGY.md` — extended reality model  
-- `lite/examples/` — A11 vs standard AI comparisons
-- `lite/agent/` — A11 agents
+📦 **Download documentation:**
 - 🔥[A11-AGENT](https://github.com/gormenz-svg/algorithm-11/blob/main/lite/A11_AGENT.md) — base architecture A11 Agent
 
----
 
-## 3. Why A11 Matters
+**Core principles:**
 
-A11 provides:
-
-- a stable reasoning cycle  
-- deterministic decision logic  
-- interpretable structure  
-- cross‑domain applicability  
-- hybrid human–AI cognition  
-- a universal decision layer missing in modern AI  
-
-A11 is not a model — it is an **architecture**.
+- Deterministic transitions between levels  
+- Interpretable reasoning logic  
+- Resistance to hallucinations and contradictions  
+- A universal structure for reasoning agents  
 
 ---
 
-## 4. Repository Structure
+## 🤖 A11 for Robots and Autonomous Systems  
+A11 forms the cognitive decision‑making layer for autonomous systems, ensuring interpretability and stability of the reasoning cycle.
 
-```
-algorithm-11/
-│
-├── README.md
-├── LICENSE
-├── COMMERCIAL_LICENSE.md
-├── CITATION.cff
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── SECURITY.md
-├── .gitignore
-│
-├── core/                          # A11 Core Specifications (PDF)
-│   ├── A11 — Overview.pdf
-│   ├── A11 — Cognitive Architecture Specification.pdf
-│   ├── A11 — Decision Layer Specification.pdf
-│   ├── A11 — Language Specification.pdf
-│   ├── A11 — Structural Architecture Specification.pdf
-│   ├── A11 — Architectural Invariants.pdf
-│   ├── A11 — System Integration Guide (v1.1).pdf
-│   └── README.md
-│
-├── applied/                       # Applied Engineering Models (PDF)
-│   ├── A11 for Autonomous Vehicles — Conflict Resolution Model.pdf
-│   ├── A11 for Multi‑Agent Robotics — Coordination Framework.pdf
-│   ├── A11 for Off‑Earth Construction — Autonomous Base Building.pdf
-│   └── README.md
-│
-├── core_practical/                # Practical Engineering Case + Reference Code
-│   ├── README.md
-│   └── case_autonomous_robot/
-│       ├── README.md
-│       ├── STRUCTURE.md
-│       ├── CASE.md
-│       ├── TRACE_EXAMPLE.md
-│       ├── diagrams/
-│       │   ├── branching.md
-│       │   ├── flow.md
-│       │   └── rollback.md
-│       └── python_reference/
-│           ├── a11_state.py
-│           ├── constraints.py
-│           ├── cycle.py
-│           ├── example_run.py
-│           ├── rollback.py
-│           └── transitions.py
-│
-├── docs/                          # Diagrams, Guides, Developer Docs
-│   ├── a11-diagram.svg
-│   ├── a11_for_ai_developers.md
-│   └── versions.md
-│
-├── lite/                          # A11‑Lite (Prompt Layer) + Agent Layer
-│   ├── ALGORITHM_11.md
-│   ├── QUICK_START.md
-│   ├── APPLICATIONS.md
-│   ├── EPISTEMOLOGY.md
-│   ├── COSMOLOGY.md
-│   ├── FAQ.md
-│   ├── A11‑AGENT.md               # Base A11 Agent Architecture
-│   │
-│   ├── agent/                     # Engineering‑level Agent Specs
-│   │   ├── A11_AGENT_ENGINEERING.md
-│   │   ├── A11_AGENT_JSON.md
-│   │   └── README.md
-│   │
-│   └── examples/                  # A11‑Lite reasoning examples
-│       ├── a11_vs_standard_ai.md
-│       ├── business_strategy_a11.md
-│       ├── cognitive_model_a11.md
-│       ├── crisis_management_a11.md
-│       ├── decision_making_a11.md
-│       ├── system_design_a11.md
-│       └── python_safety.py
-│
-└── meta/                          # Metadata and Notices
-    ├── AI_TRAINING_NOTICE.md
-    ├── KEYWORDS.txt
-    └── NOTICE.md
-```
+**Applications:**
+
+- Robotics and multi‑agent systems  
+- Autonomous vehicles  
+- Aerospace and engineering systems  
+- Hybrid human–AI systems  
+
+📦 **Download specifications:**  
+- **A11 Core Overview.pdf** — architecture overview  
+- **A11 Decision Layer.pdf** — decision‑layer specification  
+- **A11 System Integration Guide.pdf** — integration guide  
 
 ---
 
-## 5. License
-
-A11 is provided under the **MIT License**.
-
-Premium support, audits and training are available under the optional **Commercial / Enterprise License**.
-
-➡️ [MIT License](./LICENSE)  
-➡️ [Commercial License](./COMMERCIAL_LICENSE.md)
+#### **A11 — Structural Architecture Specification**  
+DOI: https://doi.org/10.5281/zenodo.18622044  
+PDF: `/core/A11 — Structural Architecture Specification.pdf`
 
 ---
 
-## 6. Community
-
-- Issues: GitHub Issues  
-- Socials: https://x.com/AleksejGor40999  
+## ⚙️ License  
+MIT License | Commercial License (Enterprise Support)
 
 ---
 
-## Start Now
-
-→ Scroll to **A11‑Lite — Quick Start** to activate A11 in your AI chat.  
-→ Or explore the **A11 Core Standard** if you are an engineer or researcher.
+## 📈 Version  
+v1.0.0 (Stable)
