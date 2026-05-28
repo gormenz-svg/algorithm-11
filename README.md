@@ -81,9 +81,9 @@ A11 forms the cognitive decision‑making layer for autonomous systems, ensuring
 - Hybrid human–AI systems  
 
 📦 **Download specifications:**  
-- **A11 Core Overview.pdf** — architecture overview  
-- **A11 Decision Layer.pdf** — decision‑layer specification  
-- **A11 System Integration Guide.pdf** — integration guide  
+- **A11-for-Robotics/A11 Core Overview.pdf** — architecture overview  
+- **A11-for-Robotics/A11 Decision Layer.pdf** — decision‑layer specification  
+- **A11-for-Robotics/A11 System Integration Guide.pdf** — integration guide  
 
 ---
 
