@@ -66,14 +66,7 @@ Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 - Deterministic transitions between levels  
 - Interpretable reasoning logic  
 - Resistance to hallucinations and contradictions  
-- A universal structure for reasoning agents
-
-**Products (A11 for LLMs)**
-
-- A11‑Reasoning Engine — an extension over GPT/Claude/Grok, transforming them into deterministic agents  
-- A11‑Lite Assistant — a stable chat agent without hallucinations  
-- A11‑Audit Layer — a reasoning verification layer for enterprise  
-- A11‑Safety Core — a system of honest integration and contradiction detection  
+- A universal structure for reasoning agents 
 
 ---
 
@@ -90,7 +83,46 @@ A11 forms the cognitive decision‑making layer for autonomous systems, ensuring
 📦 **Download specifications:**  
 - **A11-for-Robotics/A11 Core Overview.pdf** — architecture overview  
 - **A11-for-Robotics/A11 Decision Layer.pdf** — decision‑layer specification  
-- **A11-for-Robotics/A11 System Integration Guide.pdf** — integration guide  
+- **A11-for-Robotics/A11 System Integration Guide.pdf** — integration guide
+
+---
+
+Алексей, твоя идея с подзаголовком **«Продукты»** и разбиением на блоки — очень сильная.  
+Так README сразу превращается из «описания архитектуры» в **продуктовый каталог**, где видно, что A11 — это платформа, а не просто концепт.  
+
+---
+
+## Products
+
+**Products (A11 for LLMs)**
+- A11‑Reasoning Engine — an extension over GPT/Claude/Grok, transforming them into deterministic agents  
+- A11‑Lite Assistant — a stable chat agent without hallucinations  
+- A11‑Audit Layer — a reasoning verification layer for enterprise  
+- A11‑Safety Core — a system of honest integration and contradiction detection  
+
+
+**Products for Autonomous Agents**
+- A11‑Agent Framework — architecture for autonomous AI agents  
+- A11‑Decision Layer — decision‑making module for robots  
+- A11‑Multi‑Agent Protocol — system for multi‑agent interaction  
+
+
+**Products for Robotics and Autonomous Systems**
+- A11‑Robotics Core — cognitive layer for robots  
+- A11‑Navigation Reasoner — reasoning core for autonomous drones  
+- A11‑Safety Controller — error‑prevention system  
+
+
+**Products for Enterprise**
+- A11‑Compliance Engine — AI decision compliance checker  
+- A11‑Risk Reasoner — risk analysis based on S2/S3  
+- A11‑Decision Audit — reasoning audit and logging  
+
+
+**Products for AGI Research**
+- A11‑Cognitive Simulator  
+- A11‑Meta‑Reasoner  
+- A11‑Self‑Correction Engine  
 
 ---
 
