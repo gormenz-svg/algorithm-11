@@ -66,7 +66,14 @@ Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 - Deterministic transitions between levels  
 - Interpretable reasoning logic  
 - Resistance to hallucinations and contradictions  
-- A universal structure for reasoning agents  
+- A universal structure for reasoning agents
+
+**Products (A11 for LLMs)**
+
+- A11‑Reasoning Engine — an extension over GPT/Claude/Grok, transforming them into deterministic agents  
+- A11‑Lite Assistant — a stable chat agent without hallucinations  
+- A11‑Audit Layer — a reasoning verification layer for enterprise  
+- A11‑Safety Core — a system of honest integration and contradiction detection  
 
 ---
 
