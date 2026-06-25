@@ -94,7 +94,7 @@ A11 forms the cognitive decision‑making layer for autonomous systems, ensuring
 
 ## Products
 
-**Products (A11 for LLMs)**
+**Products for LLMs**
 - A11‑Reasoning Engine — an extension over GPT/Claude/Grok, transforming them into deterministic agents  
 - A11‑Lite Assistant — a stable chat agent without hallucinations  
 - A11‑Audit Layer — a reasoning verification layer for enterprise  
