@@ -57,7 +57,7 @@ Confirm that you understand and are ready to structure your reasoning through A1
 Full documentation (if accessible): https://github.com/gormenz-svg/algorithm-11
 ```
 
-📦 **Download documentation:**
+📦 **Full Architecture:**
 - 🔥[A11-AGENT](https://github.com/gormenz-svg/algorithm-11/blob/main/A11%E2%80%91for%E2%80%91LLM/A11_AGENT.md) — base architecture A11 Agent
 
 
