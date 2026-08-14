@@ -94,7 +94,7 @@ A11 forms the cognitive decision‑making layer for autonomous systems, ensuring
 - A11‑Lite Assistant — a stable chat agent without hallucinations  
 - A11‑Audit Layer — a reasoning verification layer for enterprise  
 - A11‑Safety Core — a system of honest integration and contradiction detection  
-  [A11-AGENT](https://a-11.ru/)
+  [Real A11-AGENT](https://a-11.ru/)
 
 
 **Products for Autonomous Agents**
